@@ -1,6 +1,7 @@
 import {useEffect,useState} from "react";
 import {Link} from "react-router-dom";
-async function request(path:string,body?:object){const r=await fetch("/api/moderation"+path,body?{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)}:undefined);const d=await r.json();if(!r.ok)throw new Error(typeof d.detail==="string"?d.detail:"Request failed");return d}
+import {apiUrl} from "../services/api";
+async function request(path:string,body?:object){const r=await fetch(apiUrl("/moderation"+path),body?{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)}:undefined);const d=await r.json();if(!r.ok)throw new Error(typeof d.detail==="string"?d.detail:"Request failed");return d}
 export default function Moderation(){const[data,setData]=useState<any>({authors:[],actions:[]});const[status,setStatus]=useState<any>({});const[error,setError]=useState("");const[notice,setNotice]=useState("");const[busy,setBusy]=useState(false);const[filter,setFilter]=useState("all");const[selected,setSelected]=useState<any>(null);const[message,setMessage]=useState("");
 async function refresh(){setError("");try{const[d,s]=await Promise.all([request("/authors"),request("/status")]);setData(d);setStatus(s);setMessage(s.warning_template)}catch(e:any){setError(e.message)}}
 useEffect(()=>{refresh()},[]);

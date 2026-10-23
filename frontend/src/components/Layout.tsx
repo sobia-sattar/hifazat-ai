@@ -87,18 +87,20 @@ export default function Layout() {
       </div>
 
       <header className="topbar">
-        {/* Brand Logo & Title */}
-        <NavLink to="/overview" className="brand flex items-center gap-2.5 group">
-          <CyberLogo size={36} className="group-hover:scale-105 transition-transform" />
-          <span className="brand-text">
-            HIFAZAT<span className="brand-x"> AI</span>
-          </span>
-          <span
-            className="urdu-pill text-xs font-normal tracking-wide px-1.5 py-0.5 rounded border"
-            dir="rtl"
-          >
-            حفاظت AI
-          </span>
+        {/* Brand Logo & Title — Guaranteed on ONE line */}
+        <NavLink to="/overview" className="brand flex items-center gap-2.5 group shrink-0 whitespace-nowrap">
+          <CyberLogo size={32} className="group-hover:scale-105 transition-transform shrink-0" />
+          <div className="flex items-center gap-2 whitespace-nowrap">
+            <span className="brand-logo-text whitespace-nowrap font-extrabold tracking-tight text-white flex items-center gap-1.5 text-lg">
+              HIFAZAT <span className="text-sky-400 font-bold">AI</span>
+            </span>
+            <span
+              className="urdu-badge text-[11px] font-medium px-2 py-0.5 rounded-full border border-sky-400/25 bg-sky-500/10 text-sky-300 whitespace-nowrap hidden sm:inline-block"
+              dir="rtl"
+            >
+              حفاظت
+            </span>
+          </div>
         </NavLink>
 
         {/* Desktop Navigation Links */}
@@ -111,7 +113,7 @@ export default function Layout() {
         </nav>
 
         {/* Action Controls: Theme Switcher, Settings, and Mobile Menu Toggle */}
-        <div className="topbar-actions flex items-center gap-2.5">
+        <div className="topbar-actions flex items-center gap-2 shrink-0">
           {/* Light / Dark Theme Button */}
           <button
             type="button"
@@ -127,8 +129,13 @@ export default function Layout() {
           </button>
 
           {/* Settings Link */}
-          <NavLink to="/settings" className="connection-link hidden sm:inline-flex">
-            Settings ↗
+          <NavLink
+            to="/settings"
+            className={({ isActive }) => `settings-nav-btn hidden sm:inline-flex ${isActive ? "active" : ""}`}
+            title="System Settings & API Configuration"
+          >
+            <span aria-hidden="true">⚙️</span>
+            <span>Settings</span>
           </NavLink>
 
           {/* Mobile Dropdown Trigger Button */}
@@ -161,53 +168,49 @@ export default function Layout() {
                   </span>
                 </div>
 
-                <div className="mobile-links-grid">
-                  {links.map(({ to, label, icon }) => {
-                    const isActive = location.pathname === to;
-                    return (
-                      <NavLink
-                        key={to}
-                        to={to}
-                        className={`mobile-nav-item ${isActive ? "active" : ""}`}
-                        role="menuitem"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        <span className="item-icon" aria-hidden="true">{icon}</span>
-                        <span className="item-label">{label}</span>
-                        {isActive && <span className="active-dot" aria-hidden="true">●</span>}
-                      </NavLink>
-                    );
-                  })}
+                <div className="mobile-dropdown-links">
+                  {links.map(({ to, label, icon }) => (
+                    <NavLink
+                      key={to}
+                      to={to}
+                      className={({ isActive }) =>
+                        `mobile-nav-item ${isActive ? "active" : ""}`
+                      }
+                      role="menuitem"
+                    >
+                      <span className="mobile-nav-icon" aria-hidden="true">
+                        {icon}
+                      </span>
+                      <span className="mobile-nav-label">{label}</span>
+                      {location.pathname === to && (
+                        <span className="active-dot" aria-hidden="true">
+                          ●
+                        </span>
+                      )}
+                    </NavLink>
+                  ))}
+                  
+                  {/* Settings in Mobile Dropdown */}
+                  <NavLink
+                    to="/settings"
+                    className={({ isActive }) =>
+                      `mobile-nav-item ${isActive ? "active" : ""}`
+                    }
+                    role="menuitem"
+                  >
+                    <span className="mobile-nav-icon" aria-hidden="true">⚙️</span>
+                    <span className="mobile-nav-label">Settings & API</span>
+                  </NavLink>
                 </div>
 
                 <div className="mobile-dropdown-footer">
-                  <NavLink
-                    to="/settings"
-                    className="mobile-nav-item settings-item"
-                    role="menuitem"
-                    onClick={() => setMobileMenuOpen(false)}
+                  <button
+                    type="button"
+                    className="mobile-theme-btn"
+                    onClick={toggleTheme}
                   >
-                    <span className="item-icon" aria-hidden="true">⚙</span>
-                    <span className="item-label">System Settings</span>
-                    <span className="text-xs text-sky-400">↗</span>
-                  </NavLink>
-
-                  <div className="flex items-center justify-between pt-2 px-1 text-xs">
-                    <button
-                      type="button"
-                      className="text-xs text-slate-400 hover:text-sky-400 flex items-center gap-1.5"
-                      onClick={toggleTheme}
-                    >
-                      <span>{theme === "dark" ? "☀️ Switch to Light" : "🌙 Switch to Dark"}</span>
-                    </button>
-                    <button
-                      type="button"
-                      className="text-xs text-slate-400 hover:text-sky-400"
-                      onClick={toggleMotion}
-                    >
-                      Motion: {motion ? "on" : "off"}
-                    </button>
-                  </div>
+                    <span>{theme === "dark" ? "☀️ Switch to Light Theme" : "🌙 Switch to Dark Theme"}</span>
+                  </button>
                 </div>
               </div>
             )}
@@ -216,29 +219,27 @@ export default function Layout() {
       </header>
 
       <main className="workspace">
-        <div key={location.pathname} className="route-transition">
-          <Outlet />
-        </div>
+        <Outlet />
       </main>
 
       <footer className="site-footer">
-        <span>HIFAZAT AI (حفاظت AI) · YOUR DIGITAL WORLD, YOUR PROTECTION</span>
-        <div className="flex items-center gap-4">
-          <button
-            type="button"
-            className="text-xs text-slate-400 hover:text-sky-400"
-            onClick={toggleTheme}
-          >
+        <div>
+          <span>HIFAZAT AI (حفاظت AI) · YOUR DIGITAL WORLD, YOUR PROTECTION</span>
+          <span className="hidden sm:inline">CYBER SAFETY &amp; THREAT INTELLIGENCE</span>
+        </div>
+        <div>
+          <button type="button" className="text-button" onClick={toggleTheme}>
             Theme: {theme === "dark" ? "Dark 🌙" : "Light ☀️"}
           </button>
-          <button aria-pressed={motion} onClick={toggleMotion}>
+          <button type="button" className="text-button" onClick={toggleMotion}>
             Animation: {motion ? "on" : "off"}
           </button>
-          <NavLink to="/research">Model verification &amp; metrics ↗</NavLink>
+          <NavLink to="/research" className="text-button">
+            Model verification &amp; metrics ↗
+          </NavLink>
         </div>
       </footer>
 
-      {/* Website-Wide Floating AI Cyber Safety Guardian */}
       <FloatingAssistant />
     </div>
   );

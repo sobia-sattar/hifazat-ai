@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { apiUrl } from "../services/api";
 import IncidentReportModal from "../components/IncidentReportModal";
 
 const STATUS_CONFIG: Record<
@@ -68,12 +69,12 @@ export default function IncidentCenter() {
     setError("");
     try {
       const qRes = await fetch(
-        `/api/incidents/queue${statusFilter !== "all" ? `?status=${statusFilter}` : ""}`
+        apiUrl(`/incidents/queue${statusFilter !== "all" ? `?status=${statusFilter}` : ""}`)
       );
       if (qRes.ok) setQueue(await qRes.json());
 
       if (reporterToken) {
-        const mRes = await fetch("/api/incidents/my", {
+        const mRes = await fetch(apiUrl("/incidents/my"), {
           headers: { "X-Reporter-Token": reporterToken },
         });
         if (mRes.ok) setMyReports(await mRes.json());
@@ -94,7 +95,7 @@ export default function IncidentCenter() {
     setBusy(true);
     setError("");
     try {
-      const res = await fetch(`/api/incidents/${selectedReport.id}/status`, {
+      const res = await fetch(apiUrl(`/incidents/${selectedReport.id}/status`), {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status: newStatus, notes: statusNotes }),
@@ -116,7 +117,7 @@ export default function IncidentCenter() {
     if (!confirm("Are you sure you want to permanently delete this report?")) return;
     setBusy(true);
     try {
-      const res = await fetch(`/api/incidents/${id}`, {
+      const res = await fetch(apiUrl(`/incidents/${id}`), {
         method: "DELETE",
         headers: { "X-Reporter-Token": reporterToken },
       });

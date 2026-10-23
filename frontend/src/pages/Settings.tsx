@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { api } from "../services/api";
+import { api, apiUrl } from "../services/api";
 
 export default function SettingsPage() {
   const [data, setData] = useState<any>(null);
@@ -23,7 +23,7 @@ export default function SettingsPage() {
       setHigh(d.high_confidence_threshold);
       setLow(d.low_confidence_threshold);
 
-      const r = await fetch("/api/moderation/status");
+      const r = await fetch(apiUrl("/moderation/status"));
       if (r.ok) {
         setModeration(await r.json());
       }

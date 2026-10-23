@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { apiUrl } from "../services/api";
 import {
   ResponsiveContainer,
   BarChart,
@@ -21,7 +22,7 @@ export default function ScamChecker() {
     setError("");
     setResult(null);
     try {
-      const res = await fetch("/api/scam/analyze", {
+      const res = await fetch(apiUrl("/scam/analyze"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
@@ -132,6 +133,37 @@ export default function ScamChecker() {
           onChange={(e) => setText(e.target.value)}
           placeholder="Paste full text here... (English, Urdu, or Roman Urdu)&#10;e.g. 'URGENT: Your bank account will be suspended within 24 hours. Verify your identity at http://secure-bank-login.example.com'"
         />
+        <div className="flex flex-wrap items-center gap-2 pt-1 pb-2">
+          <span className="text-[11px] text-slate-400 font-mono uppercase tracking-wider">Quick test samples:</span>
+          <button
+            type="button"
+            className="text-xs px-2.5 py-1 rounded-full bg-slate-800/80 hover:bg-slate-750 text-slate-200 border border-slate-700 transition-colors"
+            onClick={() => setText("URGENT: Your HBL bank account will be suspended within 24 hours due to unverified KYC. Click here immediately to verify your identity: http://secure-hbl-bank-verify.com/login and enter your account password and OTP to avoid permanent account block.")}
+          >
+            🚨 Bank Phishing
+          </button>
+          <button
+            type="button"
+            className="text-xs px-2.5 py-1 rounded-full bg-slate-800/80 hover:bg-slate-750 text-slate-200 border border-slate-700 transition-colors"
+            onClick={() => setText("Mubarak ho! Apko BISP / Benazir Program ki taraf se 25,000 rupay ka wazifa mila hai. Raqam wasool karne k liye foran is link pe apna EasyPaisa / JazzCash PIN aur CNIC darj karein: http://bisp-online-cash2026.net/claim")}
+          >
+            💸 EasyPaisa / BISP
+          </button>
+          <button
+            type="button"
+            className="text-xs px-2.5 py-1 rounded-full bg-slate-800/80 hover:bg-slate-750 text-slate-200 border border-slate-700 transition-colors"
+            onClick={() => setText("CONGRATULATIONS! You have been selected as the 1st prize winner of the International WhatsApp Lucky Draw of $50,000 USD! Transfer a small processing fee of $100 in Bitcoin to claim: 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa.")}
+          >
+            🎰 Lottery Prize
+          </button>
+          <button
+            type="button"
+            className="text-xs px-2.5 py-1 rounded-full bg-slate-800/80 hover:bg-slate-750 text-slate-200 border border-slate-700 transition-colors"
+            onClick={() => setText("Salam, please let me know when you are free for our project discussion. We need to submit the final report by 5 PM today.")}
+          >
+            🟢 Safe Message
+          </button>
+        </div>
         <div className="flex flex-wrap items-center gap-3">
           <button
             className="btn"

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { apiUrl } from "../services/api";
 
 interface IncidentReportModalProps {
   initialText?: string;
@@ -42,7 +43,7 @@ export default function IncidentReportModal({
     setBusy(true);
     setError("");
     try {
-      const res = await fetch("/api/incidents", {
+      const res = await fetch(apiUrl("/incidents"), {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

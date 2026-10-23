@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { parse } from '../services/api';
+import { parse, apiUrl } from '../services/api';
 
 type Evidence = {
   authors: {
@@ -20,7 +20,7 @@ export default function DashboardPage() {
     setLoading(true);
     setError('');
     try {
-      setEvidence(await fetch('/api/moderation/authors').then(parse));
+      setEvidence(await fetch(apiUrl('/moderation/authors')).then(parse));
     } catch (e: any) {
       setError(e.message);
     } finally {

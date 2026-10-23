@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { apiUrl } from '../services/api';
 
 export default function TextAnalyzerPage() {
   const [text, setText] = useState('Aap ka din acha guzray.');
@@ -11,7 +12,7 @@ export default function TextAnalyzerPage() {
     setError('');
     setResult(null);
     try {
-      const response = await fetch('/api/v2/predict', {
+      const response = await fetch(apiUrl('/v2/predict'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text }),
@@ -34,7 +35,7 @@ export default function TextAnalyzerPage() {
     try {
       const body = new FormData();
       body.append('file', file);
-      const response = await fetch('/api/v2/predict/batch', { method: 'POST', body });
+      const response = await fetch(apiUrl('/v2/predict/batch'), { method: 'POST', body });
       if (!response.ok) throw new Error(JSON.stringify((await response.json()).detail));
       const url = URL.createObjectURL(await response.blob());
       const anchor = document.createElement('a');

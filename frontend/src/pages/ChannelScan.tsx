@@ -1,11 +1,11 @@
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
-import {parse} from '../services/api';
+import {parse, apiUrl} from '../services/api';
 type Row={id:string;video_id:string;text:string;author_id:string|null;author_name:string;harmful:boolean};
 type Result={channel:{id:string;name:string};comments:Row[];has_more:boolean;limit:number;skipped:number};
 export default function ChannelScan(){
  const [channel,setChannel]=useState(''),[limit,setLimit]=useState(100),[busy,setBusy]=useState(false),[error,setError]=useState(''),[data,setData]=useState<Result|null>(null),[search,setSearch]=useState(''),[onlyFlags,setOnlyFlags]=useState(false),[page,setPage]=useState(0);
- async function scan(){setBusy(true);setError('');setData(null);setPage(0);try{const response=await fetch('/api/youtube/channel/scan',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({channel,max_comments:limit})});const body=await parse(response);setData(body)}catch(e:any){setError(e.message)}finally{setBusy(false)}}
+ async function scan(){setBusy(true);setError('');setData(null);setPage(0);try{const response=await fetch(apiUrl('/youtube/channel/scan'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({channel,max_comments:limit})});const body=await parse(response);setData(body)}catch(e:any){setError(e.message)}finally{setBusy(false)}}
  const rows=data?.comments||[],flagged=rows.filter(c=>c.harmful).length,people=new Set(rows.map(c=>c.author_id).filter(Boolean)).size;
  const visible=rows.filter(c=>(!onlyFlags||c.harmful)&&(c.text+' '+c.author_name).toLowerCase().includes(search.toLowerCase()));
  function download(){if(!data)return;const url=URL.createObjectURL(new Blob([JSON.stringify({...data,scope:'Public top-level comments on this channel; model flags are not human verdicts.'},null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='hifazat-ai-channel-scan.json';a.click();URL.revokeObjectURL(url)}

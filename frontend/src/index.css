@@ -142,7 +142,8 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.11;ba
   display: none;
 }
 
-.theme-toggle-btn {
+.theme-toggle-btn,
+.settings-nav-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -155,12 +156,20 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.11;ba
   color: #bae6fd;
   cursor: pointer;
   transition: all 0.2s;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.theme-toggle-btn:hover {
+.theme-toggle-btn:hover,
+.settings-nav-btn:hover,
+.settings-nav-btn.active {
   background: #183a5c;
   border-color: #38bdf8;
   color: #ffffff;
+}
+
+.brand-logo-text {
+  letter-spacing: -0.5px;
 }
 
 .mobile-menu-btn {
@@ -368,14 +377,17 @@ body[data-theme="light"] {
   color: #0b1a30;
 }
 
-[data-theme="light"] .theme-toggle-btn {
+[data-theme="light"] .theme-toggle-btn,
+[data-theme="light"] .settings-nav-btn {
   background: #ffffff;
   border-color: #cbd5e1;
   color: #0b1a30;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-[data-theme="light"] .theme-toggle-btn:hover {
+[data-theme="light"] .theme-toggle-btn:hover,
+[data-theme="light"] .settings-nav-btn:hover,
+[data-theme="light"] .settings-nav-btn.active {
   background: #e0f2fe;
   border-color: #0284c7;
   color: #0284c7;

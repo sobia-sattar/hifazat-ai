@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
+import { apiUrl } from "../services/api";
 
 interface Message {
   id: string;
@@ -46,7 +47,7 @@ export default function FloatingAssistant() {
 
   // Load crisis resources once
   useEffect(() => {
-    fetch("/api/assistant/crisis-resources")
+    fetch(apiUrl("/assistant/crisis-resources"))
       .then((r) => r.json())
       .then((d) => setCrisisList(d.resources || []))
       .catch(() => {});
@@ -94,7 +95,7 @@ export default function FloatingAssistant() {
     setBusy(true);
 
     try {
-      const res = await fetch("/api/assistant/chat", {
+      const res = await fetch(apiUrl("/assistant/chat"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: textToSend }),
