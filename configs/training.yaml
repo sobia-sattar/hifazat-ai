@@ -1,0 +1,13 @@
+seed: 42
+selection_metric: observed_label_validation_macro_f1
+profiles:
+  quick: {trials: 1, max_features: 15000, bootstrap: 50}
+  standard: {trials: 2, max_features: 40000, bootstrap: 200}
+  research: {trials: 6, max_features: 120000, bootstrap: 1000}
+transformers:
+  models: [xlm-roberta-base, bert-base-multilingual-cased]
+  lengths: [128, 256]
+  epochs: 5
+  patience: 2
+  learning_rate: 0.00002
+  gradient_accumulation: 4

@@ -1,0 +1,9 @@
+# Source review (2026-08-31)
+
+- [Davidson et al. repository](https://github.com/t-davidson/hate-speech-and-offensive-language), [MIT license](https://github.com/t-davidson/hate-speech-and-offensive-language/blob/master/LICENSE): existing local CSV; labels 0=hate, 1=offensive, 2=neither. Cite Davidson, Warmsley, Macy and Weber (2017), ICWSM. Preserve upstream license and attribution if redistributing. The repository also explicitly warns about racial bias. Do not treat this source as representative of all English speech.
+- [Roman-Urdu-Toxic-Corpus](https://huggingface.co/datasets/hafiz-hassaan-saeed/Roman-Urdu-Toxic-Corpus): dataset metadata declares CC-BY-4.0; actual file is RUT.parquet, fields Roman_Urdu and Toxic (0/1). Attribution: hafiz-hassaan-saeed, Roman-Urdu-Toxic-Corpus, Hugging Face. Downloaded 2026-08-31. The dataset card lacks collection and annotation details; provenance and annotation-quality limitations remain substantial despite the declared license. Preserve attribution and identify preprocessing changes. No subtype annotations are assumed.
+- [farahadeeba/cyberbullyingcorpus](https://github.com/farahadeeba/cyberbullyingcorpus): existing Urdu spreadsheets preserved. No clear license was found in the inspected repository. Excluded from new training pending documented permission. Historical use does not establish permission for new use or redistribution.
+
+Use `python -m src.data.acquire` for approved downloads. Add sources to both data.yaml and label_mapping.yaml with explicit field names; the pipeline rejects unknown labels. No sentiment-to-harm mapping, guessed fields, automatic source discovery or implicit license approval is performed.
+
+Raw comments remain excluded from Git. Inspect and comply with upstream platform terms before any public redistribution. License metadata is a source declaration, not a guarantee of collection consent. This project is for research with human oversight.

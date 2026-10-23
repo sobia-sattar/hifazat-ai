@@ -1,0 +1,2093 @@
+{
+  "counts": {
+    "false_positive": 220,
+    "false_negative": 238,
+    "low_confidence": 134,
+    "roman_urdu": 53,
+    "urdu": 1516,
+    "code_mixing": 1752,
+    "negation": 549,
+    "sarcasm_candidate": 221,
+    "slang": 148,
+    "context_dependent_candidate": 450
+  },
+  "examples": [
+    {
+      "text": "\u0634\u0631\u0645 \u0646\u0627\u0645 \u0686\u0691\u06cc\u0627 \u0648\u0627\u0642\u0641 \u0646\u06c1\u06cc\u06ba \u0628\u062f \u0634\u0631\u0645 \u0627\u0646\u0633\u0627\u0646",
+      "language": "Urdu",
+      "confidence": 0.9550937569691476,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "kissan march \u06a9\u0633\u0627\u0646 \u0628\u06be\u0679 \u0632\u0646\u062f\u06c1 kasur smt kasur",
+      "language": "Mixed",
+      "confidence": 0.9369358435982503,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "Im thinkin about using this beat and yeah I made it too bitch lol http://t.co/HTUk4USZJo",
+      "language": "English",
+      "confidence": 0.9962207861878181,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "sarcasm_candidate"
+      ]
+    },
+    {
+      "text": "\"if i wasnt in a work place id deck you\" aye fucking right, I'd give you a tyson 4 combo nd end you with an uppercut. Shut the fuck up bitch",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9996352557473227,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u067e\u0627 \u0622\u0646\u0627 \u0645\u06cc\u06ba \u067e\u0627 \u0622\u06d3 \u0633\u0631 \u0644\u06cc\u0646\u0627 \u0628\u0644\u0627\u0646\u0627 \u0633\u0648\u0627\u06d3 \u062d\u0633\u06cc\u0646 \u06a9\u0648\u0678 \u0628\u0631\u0627\u0678 \u0628\u062a\u0627\u0646\u0627 \u062a\u0631\u0633\u0646\u0627 \u0645\u06cc\u06ba \u067e\u0627 \u0628\u0631\u0633\u0646\u0627 \ud83d\udd2e \ud83c\udf3a",
+      "language": "Urdu",
+      "confidence": 0.9228890921368328,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "RT @ErikaWCVB: @marthacoakley called Charlie Baker to concede around 8:15 this morning. She plans to address supporters at 11am. #wcvb",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9129580480568334,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "@JustWordsx dont favorite me you faggot",
+      "language": "English",
+      "confidence": 0.9980117264864954,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "\u0645\u0627\u0634\u0627\u0627\u0644\u0644\u06c1 \u06c1\u0648\u0634\u06cc\u0627\u0631 \u0628\u06c1\u062a \ud83e\udd23 \ud83e\udd23",
+      "language": "Urdu",
+      "confidence": 0.9324127435289917,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0627\u0645\u06cc\u0646",
+      "language": "Urdu",
+      "confidence": 0.9370667713674834,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0644\u0646\u062f\u0646 \u0628\u06be\u0627\u06af\u0652\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.9290394547176112,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "&#8220;@fatbellybella: I know u didnt hit that jigga with my fav purse. .. @solangeknowles&#8221;--no chill! &#128514;&#128514;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9581881681722746,
+      "true_harmful": false,
+      "pred_harmful": true,
+      "tags": [
+        "false_positive",
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0628\u0627\u067e \u0628\u06cc\u0679\u06cc \u062f\u06cc\u06a9\u06be \u0628\u06be\u0691\u0627\u0633 \u0646\u06a9\u0644\u0646\u0627 \u0631\u06be\u0627 \u06be\u06cc\u06ba \u0627\u06cc\u0633\u0627 \u062e\u0627\u0646\u062f\u0627\u0646 \u062a\u0639\u0644\u0642 \u0631\u06a9\u06be\u0646\u0627 \u06be\u06cc\u06ba \u062c\u0646 \u0639\u0648\u0631\u062a \u0633\u0627\u0644 \u0628\u0639\u062f \u0627\u06cc\u06a9 \u062f\u0646 \u062c\u0644\u0648\u0633 \u0646\u06a9\u0644\u0646\u0627 \u06a9\u06c1\u0646\u0627 \u06be\u06cc\u06ba \u0645\u06cc\u0631\u0627 \u062c\u0633\u0645 \u0645\u06cc\u0631\u0627 \u0645\u0631\u0636\u06cc",
+      "language": "Urdu",
+      "confidence": 0.564438620545545,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "I'm getting tired of you telling what the fuck I'm doing every time I'm doing something lol. -peckerwood guy",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9949820033262948,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "sarcasm_candidate"
+      ]
+    },
+    {
+      "text": "Real nigs uck with me and I don't give a uck who don't",
+      "language": "English",
+      "confidence": 0.9566945995685753,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "\u0634\u06a9\u0631\u06cc\u06c1 \u0628\u06c1\u062a \u0632\u06cc\u0627\u062f\u06c1 \u0645\u06cc\u0631\u0627 \u062f\u0639\u0627 \u06cc\u0627\u062f \u0631\u06a9\u06be\u0646\u0627 \u2764",
+      "language": "Urdu",
+      "confidence": 0.9447865073548684,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "&#8220;@JennerAcosta: Sleep over with guys doesn't mean we gonna fuck. TRUST ME&#8221; you're a bitch for denying them pussy",
+      "language": "English-Roman Urdu",
+      "confidence": 0.999657672388514,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "RT @MANIAC3X: @Buckm00se I'd rather be from a rancho then live in ghetto ass urban areas with niggers and nigger impersonators. Adopting ni&#8230;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9921490326853298,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "@Briscoefunnyguy lol he still a lil bitch",
+      "language": "English",
+      "confidence": 0.9729522487699875,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "sarcasm_candidate"
+      ]
+    },
+    {
+      "text": "RT @_iGotHer: \"Her pussy fatter than ya dick\" lmao",
+      "language": "English-Roman Urdu",
+      "confidence": 0.999708786803372,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "sarcasm_candidate"
+      ]
+    },
+    {
+      "text": "\u0645\u06cc\u0631\u0627 \u0637\u0631\u0641 \u062e\u0627\u0646 \u0635\u0627\u062d\u0628 \u0645\u0633\u06a9\u0631\u0627\u0646\u0627 \u06c1\u0648\u0646\u0627 \u062a\u0635\u0648\u06cc\u0631",
+      "language": "Urdu",
+      "confidence": 0.9168690692688728,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u062c\u0627\u0645 \u06a9\u0645\u0627\u0644 \u06c1\u0679\u0646\u0627 \u062c\u0627\u0645 \u0635\u0627\u062d\u0628 \u062e\u0644\u0627\u0641 \u06c1\u0648\u06af\u0626\u0627 \u0627\u0628\u06be\u06cc \u0642\u062f\u0648\u0633 \u0628\u0632\u0646\u062c\u0648 \u0627\u062e\u062a\u0644\u0627\u0641 \u0635\u0648\u0631\u062a \u0648\u0627\u067e\u0633 \u062c\u0627\u0645 \u0635\u0627\u062d\u0628 \u067e\u0627\u0633 \u0648\u0627\u06c1 \u0633\u06cc\u0627\u0633\u062a \u06a9\u06cc\u0627 \u06a9\u06cc\u0627 \u06a9\u0631\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.89997635558799,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0622\u0641\u0633 \u062c\u0627\u0646\u0627 \u06c1\u0648\u0646\u0627 \u062f\u06be\u0648\u0628\u06cc \u0645\u0644\u0646\u0627 \u0628\u062a\u0627\u0646\u0627 \u0627\u06af\u0631 \u062f\u06be\u0644\u0627\u0626\u06cc \u0622\u0646\u0627 \u06c1\u0648\u0646\u0627 \u06a9\u067e\u0691\u0627 \u0645\u0644\u0646\u0627 \u0648\u06cc\u0633\u0627 \u0648\u0627\u067e\u0633 \u0631\u06a9\u06be\u0646\u0627 \u062f\u06cc\u0646\u0627 \u0633\u0648\u0646\u0627 \u0631\u0648\u067e\u0627 \u0627\u0646\u06c1 \u062f\u06cc\u0626\u0627 \u0686\u0627\u0626\u0627 \u0644\u06cc\u0646\u0627 \u062a\u0635\u0648\u06cc\u0631 \u0646\u0638\u0631 \u0622\u0646\u06c1 \u0648\u0627\u0644\u06cc \u0646\u0626\u06cc \u0633\u0627\u0626\u06cc\u06a9\u0644 \u0627\u0646\u06c1\u06cc \u062f\u06be\u0648\u0628\u06cc \u0628\u06be\u0627\u0626 \u067e\u0631\u0627\u0646\u06cc \u0633\u0627\u0626\u06a9\u0644 \u0639\u0631\u0635\u06c1 \u0642\u0628\u0644 \u0686\u0648\u0631\u06cc \u06c1\u0648\u06af\u0626\u06cc \u06c1\u0648\u0646\u0627 \ud83d\udc47 \ud83d\udc47",
+      "language": "Urdu",
+      "confidence": 0.7334093160818749,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "Where this brolic bitch at ? Lol http://t.co/c0ooYDnq4M",
+      "language": "English",
+      "confidence": 0.9997392903113915,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "sarcasm_candidate",
+        "slang"
+      ]
+    },
+    {
+      "text": "@JuliaDBrock Are we still talking about animals? I know some Asian folks that would love to see how you prepare your pussy before eating it.",
+      "language": "English",
+      "confidence": 0.9845476494098107,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "slang"
+      ]
+    },
+    {
+      "text": "\u0632\u0631\u062f\u0627\u0631\u06cc \u0635\u0627\u062d\u0628 \u06a9\u0631\u06c1 \u062c\u0627\u0646\u0627 \u06c1\u0648\u0646\u0627 \ud83d\ude02",
+      "language": "Urdu",
+      "confidence": 0.6771723482530565,
+      "true_harmful": false,
+      "pred_harmful": true,
+      "tags": [
+        "false_positive",
+        "urdu"
+      ]
+    },
+    {
+      "text": "Phil Hughes looking like the Phil Hughes of old. 2010. #Yankees #MLB",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9766170864293471,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "@LilTunechi reason for why he only rap about pussy... \" What am I supposed to talk about?\" smh \nHow bout you make music that ain't NEGATIVE!",
+      "language": "English-Roman Urdu",
+      "confidence": 0.961196443520741,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "Lol at these honkies talking trash I'm done with this shit #growup #whitetrash",
+      "language": "English",
+      "confidence": 0.9537818540488571,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "sarcasm_candidate"
+      ]
+    },
+    {
+      "text": "\u0686\u06be\u0627\u067e\u06c1 \u0628\u062f\u062a\u0645\u06cc\u0632\u06cc \u067e\u0648\u0644\u06cc\u0633 \u0641\u0648\u062c \u06a9\u06c1\u0627\u06ba \u0622\u0646\u0627 \u062c\u0627\u0646\u0627 \u0627\u06cc\u0633\u0627 \u0679\u0648\u06cc\u0679\u0633 \u0639\u0645\u0631\u0627\u0646 \u062e\u0627\u0646 \u062c\u0627\u0626\u0632 \u062a\u062d\u0631\u06cc\u06a9 \u0646\u0642\u0635\u0627\u0646 \u067e\u06c1\u0646\u0686\u0646\u0627 \u0627\u0645\u067e\u0648\u0631\u0679\u0688 \u062d\u06a9\u0648\u0645\u062a \u0646\u0627\u0645\u0646\u0638\u0648\u0631",
+      "language": "Urdu",
+      "confidence": 0.9807590067371033,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u06c1\u0627 \u067e\u0679\u0648\u0627\u0631\u06cc",
+      "language": "Urdu",
+      "confidence": 0.9985768046445345,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0686\u06be\u0648\u0691\u0648\u0627 \u062f\u0648 \u06c1\u0645 \u063a\u0645 \u06cc\u06c1\u06cc \u0648\u0642\u062a \u06a9\u0631\u0645 \ud83d\ude25 \u0641\u0627\u0637\u0645\u06c1 \u0632\u06be\u0631\u0627 \u0635 \u0622\u067e\u06a9\u0648 \u0628\u0686\u0627 \u0642\u0633\u0645 \ud83d\udc94 \ud83d\ude4f \ud83c\udffb",
+      "language": "Urdu",
+      "confidence": 0.6543051874591062,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "@ToddIrwin1 NFL... Forgetabout they got until February. It's the pennant race. Let's Go Yanks.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.6952928942992489,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0635\u0627\u0628\u0646 \u0631\u0646\u06af \u0644\u06cc\u062c\u06cc\u0626\u0627 \u0645\u06af\u0631 \u062c\u06be\u0627\u06af \u0633\u0641\u06cc\u062f \u06c1\u0649 \u0646\u06a9\u0644\u0646\u0627 \u06c1\u06d2\u0627\u0633\u06cc \u0637\u0631\u062d \u06cc\u0648\u062a\u06be\u06cc\u0627 \u062c\u062a\u0646\u0627 \u067e\u0691\u06be\u0646\u0627 \u0644\u06a9\u06be\u0646\u0627 \u062f\u0645\u0627\u063a \u062e\u0627\u0644\u06cc \ud83e\udd23 \ud83d\ude1d \ud83e\udd23",
+      "language": "Urdu",
+      "confidence": 0.7447043434631293,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0622\u062c \u062c\u0646\u0648\u0628\u06cc \u067e\u0634\u062a\u0648\u0646\u062e\u0648\u0627 \u0645\u0631\u06a9\u0632\u06cc \u0634\u06c1\u0631 \u06a9\u0648\u06cc\u0679\u06c1 \u0627\u0648\u06cc\u0633 \u0627\u0628\u062f\u0627\u0644 \u0631\u06c1\u0627\u0626\u06cc \u0627\u06cc\u06a9 \u0628\u06c1\u062a \u0628\u0691\u0627 \u0627\u062d\u062a\u062c\u0627\u062c \u0631\u06cc\u06a9\u0627\u0631\u0688 \u06a9\u06cc\u0627 \u062c\u0627\u0646\u0627 \u0645\u0637\u0627\u0644\u0628\u06c1 \u06a9\u06cc\u0627 \u062c\u0627\u0646\u0627 \u06c1\u0645\u0627\u0631\u0627 \u062a\u062d\u0631\u06cc\u06a9 \u062a\u0645\u0627\u0645 \u0633\u0627\u062a\u06be\u06cc \u0641\u0648\u0631\u0627 \u06a9\u0631\u0646\u0627 \u062c\u0627\u0626 releaseowaisabdal",
+      "language": "Mixed",
+      "confidence": 0.9710234907878684,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u06c1\u0645\u0627\u0631\u0627 \u0628\u06c1\u062a \u0639\u062c\u06cc\u0628 \u0644\u0627\u0626\u0646 \u0644\u06af\u0646\u0627 10 \u0645\u0646\u0679 \u06c1\u0648\u0646\u0627 \u06a9\u0627\u0645 \u06a9\u0631\u0646\u0627 15 \u0645\u0646\u0679 \u0641\u0648\u0646 \u06a9\u0627\u0644 \u0633\u0641\u0627\u0631\u0634 \u06a9\u0631\u0646\u0627 \u0641\u062e\u0631 \u0645\u062d\u0633\u0648\u0633 \u0648\u0627\u06c1 \u0635\u062f\u0642\u06c1",
+      "language": "Urdu",
+      "confidence": 0.9750951677281241,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "A nicca ain't perfect but my heart is pure",
+      "language": "English-Roman Urdu",
+      "confidence": 0.7324066426572245,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "RT @AyGeraldJay: The ape was like \"Oh you niggas gon learn today\" &#128557;&#128128; https://t.co/FYK1XeBgV7",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9548078901048809,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "RT @PurpleCaine: Somebody get my nigga. @Rvm3o some pussy cuz this nigga dont get no ass so imma need one of my hoes to slide in my nigga &#8230;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9996918223968557,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u0644\u0627\u0646\u0627 \u0645\u062d\u062f\u0648\u062f \u062e\u0648\u0627\u06c1\u0634\u0627\u062a \u0645\u062d\u062f\u0648\u062f \u0632\u0646\u062f\u06af\u06cc \u0639\u0632\u0627\u0628 \u0628\u0646\u0646\u0627 \u062f\u06cc\u0646\u0627 \u0642\u0648\u0645\u06cc \u0632\u0628\u0627\u0646 \u0627\u0631\u062f\u0648 \u0632\u0628\u0627\u0646",
+      "language": "Urdu",
+      "confidence": 0.990730690227249,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u062d\u0631\u0645\u06cc\u0646 \u0627\u0644\u0634\u0631\u06cc\u0641\u06cc\u0646 \u0628\u062f \u0627\u062e\u0644\u0627\u0642\u06cc \u0645\u0638\u0627\u06c1\u0631\u06c1 \u062c\u0646 \u0628\u062f \u0634\u0631\u0645 \u06a9\u06cc\u0627 \u06cc\u0648\u0631\u067e \u06a9\u06cc\u0627 \u067e\u06cc\u063a\u0627\u0645 \u062f\u06cc\u0646\u0627 \u0686\u0627\u06c1\u0646\u0627 \u06be\u0645 \u06a9\u062a\u0646\u0627 \u06af\u0631\u0646\u0627 \u06c1\u0648\u0646\u0627 \u06be\u06cc\u06ba \u0627\u0641\u0633\u0648\u0633 \u0645\u0633\u062c\u062f \u0646\u0628\u0648\u06cc \u062a\u0648\u06c1\u06cc\u0646 \u0646\u0627\u0645\u0646\u0638\u0648\u0631",
+      "language": "Urdu",
+      "confidence": 0.9009574497721499,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u067e\u0627\u06a9\u0633\u062a\u0627\u0646\u06cc \u0633\u06cc\u0627\u0633\u062a \u067e\u0627\u06a9\u0633\u062a\u0627\u0646\u06cc \u0627\u0642\u062f\u0627\u0631 \u0645\u0637\u0627\u0628\u0642 \u0686\u0644\u0646\u0627 \u067e\u0691\u0646\u0627 \u0648\u0642\u062a \u0644\u06af\u0646\u0627 \u0635\u0641\u0627\u0626\u06cc \u062a\u0628 \u062c\u0630\u0628\u0627\u062a \u0646\u06c1\u06cc\u06ba \u0639\u0642\u0644 \u0627\u067e\u06cc\u0644",
+      "language": "Urdu",
+      "confidence": 0.8092313618204967,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "RT @StunningStina: We all know you're fucking a bitch right now LOL",
+      "language": "English-Roman Urdu",
+      "confidence": 0.999229213830261,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "sarcasm_candidate"
+      ]
+    },
+    {
+      "text": "niggas &amp; bitches dating ugly niggas &amp; hoes kuz they can trust em then they cheat w/ the elite hoes &amp; niggas ...&#128514;&#128514;&#128514;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9996974306241285,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u06a9\u0644\u0627\u0645 \u06a9\u0631\u0646\u0627 \u0642\u0648\u0633 \u0642\u0632\u062d \u0631\u0646\u06af \u0627\u06a9 \u062e\u06cc\u0627\u0644 \u0634\u0627\u0639\u0631\u06cc \u0631\u06be\u062a\u0627",
+      "language": "Urdu",
+      "confidence": 0.9674675258652228,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "RT @moneygang_ROD: Musty pussy maggot bitches tryna lick my sac for riches. @OGMaco Fuckemx3",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9998443236672021,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "... but bitches catch feelings after, all the damn time.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9955925526100591,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "@clinchmtn316 @sixonesixband AMERICA today, the rule of thumb is: when in doubt, blame \"whitey\"",
+      "language": "English-Roman Urdu",
+      "confidence": 0.6951832420606595,
+      "true_harmful": true,
+      "pred_harmful": false,
+      "tags": [
+        "false_negative",
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "RT @dontesydnor: when kanye said \"mayonnaise colored benz, i push miracle whips\" http://t.co/iizYdfbZCg",
+      "language": "English",
+      "confidence": 0.7989898036584675,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "My cat is fighting the street cat carry through the glass in my room. What the hell. #stfu #pussies",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9635464306612526,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "@bogglethemind83 @AJ0427 Was about to fly to Portugal &amp; open a can of whoopass since they started to zoom out during \"Still run this bitch\"",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9700967640577659,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0645\u06cc\u0631\u0627 \u062a\u0639\u0627\u0631\u0641 \u0646\u06c1 \u067e\u0648\u0686\u06be\u0646\u0627 \u0644\u0648\u06af \u06a9\u06cc\u0627 \u06a9\u064a\u0627 \u0648\u0642\u062a \u0628\u062a\u0627\u0626\u06d2\u06af\u0627 \ud83d\udd25 \u2764",
+      "language": "Urdu",
+      "confidence": 0.9291816020337582,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "Spending money on these hoes , nigga you aint fuck SHIT &#10071;&#65039;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9999603668281132,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0688\u0648\u06af\u06cc \u0628\u0644\u0627\u0646\u0627 \u0627\u0645\u067e\u0648\u0631\u0679\u0688 \u062d\u06a9\u0648\u0645\u062a \u0646\u0627\u0645\u0646\u0638\u0648\u0631",
+      "language": "Urdu",
+      "confidence": 0.9999963740966703,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0627\u06cc\u06a9 \u0628\u0627\u0631 \u067e\u06be\u0631\u0646\u0627 \u0627\u0633\u0679\u06cc\u0679 \u0628\u06cc\u0646\u06a9 \u0686\u0627\u0631 \u0628\u06cc\u0646\u06a9 \u0633\u0648\u062f\u06cc \u0646\u0638\u0627\u0645 \u062c\u0627\u0631\u06cc \u0631\u06a9\u06be\u0646\u0627 \u062a\u06cc\u0646 \u0627\u0639\u0644\u06cc \u0639\u062f\u0627\u0644\u062a \u0641\u06cc\u0635\u0644\u06c1 \u06a9\u06be\u0679\u0627\u0626\u06cc \u0688\u0627\u0644\u0646\u0627 \u0633\u067e\u0631\u06cc\u0645 \u06a9\u0648\u0631\u0679 \u0627\u067e\u06cc\u0644 \u062f\u0627\u0626\u0631 \u06a9\u0631\u062f\u06cc\u0646\u0627 \u062d\u0627\u0644\u0627\u0646\u06a9\u06c1 \u0633\u0648\u062f\u06cc \u0646\u0638\u0627\u0645 \u062e\u062a\u0645 \u062d\u06a9\u0648\u0645\u062a \u067e\u0627\u0646\u0686 \u0633\u0627\u0644 \u0637\u0648\u06cc\u0644 \u0645\u06c1\u0644\u062a \u062f\u06cc\u0646\u0627 \u062c\u0627\u0646\u0627 \u06c1\u0648\u0646\u0627 \u063a\u06cc\u0631\u062a \u0645\u0646\u062f \u0645\u0633\u0644\u0645\u0627\u0646 \u0633\u0648\u062f\u06cc \u0628\u0646\u06a9 \u06a9\u0627\u0628\u0627\u0626\u06cc\u06a9\u0627\u0679",
+      "language": "Urdu",
+      "confidence": 0.953914919233382,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u0679\u06cc \u0627\u06cc\u0645 \u062a\u0645\u0627\u0645 \u0645\u0638\u0644\u0648\u0645 \u0645\u062d\u06a9\u0648\u0645 \u0627\u0642\u0648\u0627\u0645 \u062a\u0648\u0627\u0646\u0627 \u0627\u0648\u0627\u0632 \u06c1\u06cc\u0627 \u270c pashtunsitln 4 aliwazir",
+      "language": "Mixed",
+      "confidence": 0.8254511877879542,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u062c\u06cc \u0645\u06cc\u0631\u0627 \u06a9\u0648\u0627\u0644\u0679\u06cc \u0631\u0633\u067e\u0648\u0646\u0633 \ud83d\ude4f \ud83d\ude4f",
+      "language": "Urdu",
+      "confidence": 0.8451174153037974,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "RT @TOBINSUPREME: y does every female think every nigga they come across is in love w them?\nbitch I could leave u , smoke a blunt &amp; forget &#8230;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9874397541534138,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u0646\u0648\u0627\u0632 \u0634\u0631\u06cc\u0641 \u0633\u0645\u062c\u06be\u0646\u0627 \u0631\u06a9\u06be\u0627 \ud83e\udd23",
+      "language": "Urdu",
+      "confidence": 0.5988274256754467,
+      "true_harmful": false,
+      "pred_harmful": true,
+      "tags": [
+        "false_positive",
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u062a\u06be\u0648\u0691\u0627 \u0639\u0631\u0635\u06c1 \u0631\u06c1\u0646\u0627 \u062c\u0627\u0646\u0627 \u062a\u06a9\u0644\u06cc\u0641 \u062a\u062c\u06be\u0627 \u0645\u0644\u0646\u0627 \u0648\u0627\u0644\u06cc \u0628\u062d\u062b \u0642\u0627\u0628\u0644 \u0646\u06c1\u06cc\u06ba \ud83e\udd2d",
+      "language": "Urdu",
+      "confidence": 0.8947296903325411,
+      "true_harmful": true,
+      "pred_harmful": false,
+      "tags": [
+        "false_negative",
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0628\u06c1\u062a \u062e\u0648\u0634 \u0645\u062c\u06be\u0627 \u0645\u0648\u0642\u0639 \u0645\u0644 \u0645\u0642\u0635\u062f \u062c\u0627\u0646\u0628 \u0628\u0691\u06be\u0646\u0627 \u0633\u06a9\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.9982631342200741,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u06c1\u0645\u06cc\u0634\u06c1 \u0627\u06cc\u0645\u0627\u0646\u062f\u0627\u0631\u06cc \u0631\u0627\u06c1 \u0686\u0644\u0646\u0627 \u0648\u0627\u0644\u0627 \u067e\u06c1\u0686\u0627\u0646\u0646\u0627 \u0631\u06c1\u0646\u0627 \ud83e\udd40 \ud83d\udc9c",
+      "language": "Urdu",
+      "confidence": 0.968326564106123,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "@HaLaWa0402 not as sick as you muzzie trash @JewJitsuGrl @JoeDouglas1 @Darknight420 @blackorchidm16 http://t.co/KQrMhSzmpj",
+      "language": "English",
+      "confidence": 0.6742252021971403,
+      "true_harmful": true,
+      "pred_harmful": false,
+      "tags": [
+        "false_negative",
+        "negation"
+      ]
+    },
+    {
+      "text": "\u062c\u0627\u062f\u06c1 \u0686\u0648\u0646\u06af\u06cc \u062c\u06c1\u0644\u0645 \u0679\u06cc \u0622\u0626\u06cc \u06a9\u0627\u0631\u06a9\u0646 \u06af\u0631\u0641\u062a\u0627\u0631 \u0644\u06cc\u0646\u0627 \u062c\u0627\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.7130688549535774,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "@allsportsbruh how? All of the QBs we had before this season were trash. They brought in a veteran so they could have someone to play",
+      "language": "English-Roman Urdu",
+      "confidence": 0.5437845975348885,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "low_confidence",
+        "code_mixing",
+        "slang"
+      ]
+    },
+    {
+      "text": "RT @KevinHart2ReaI: bitches love \"body party\" &#128571;&#128166;&#128069;&#128068;&#128525;&#128149; but when it's time to take da dick, the party canceled &#128581;&#127814; FALSE ADVERTISING ASS BITCHES",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9992416699205539,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0686\u06a9\u0648\u0627\u0644 \u0627\u0633\u0644\u0627\u0645 \u0622\u0628\u0627\u062f \u0627\u06d2 \u0627\u06cc\u0633 \u0622\u0626\u06cc \u0646\u0648\u06cc\u062f \u0627\u0642\u0628\u0627\u0644 \u0627\u06c1\u0644 \u062e\u0627\u0646\u06c1 7 \u0627\u0641\u0631\u0627\u062f \u0645\u0631\u0646\u0627 \u0633\u0627\u0646\u062d\u06c1 \u062c\u0627\u06ba \u0628\u062d\u0642 \u0686\u06a9\u0648\u0627\u0644 \u0627\u06d2\u0627\u06cc\u0633 \u0622\u0626\u06cc \u062a\u0639\u0644\u0642 \u062a\u062d\u0635\u06cc\u0644 \u062a\u0644\u06c1 \u06af\u0646\u06af \u06a9\u06d2\u0639\u0644\u0627\u0642\u06c1 \u062f\u0648\u062f\u06cc\u0627\u0644 \u0633\u06d2\u062a\u06be\u0627 \u0686\u06a9\u0648\u0627\u0644 \u062c\u0627\u0646 \u0628\u062d\u0642 \u06c1\u0648\u0646\u06d2\u0648\u0627\u0644 \u0627\u06d2 \u0627\u06cc\u0633 \u0622\u0626\u06cc \u0646\u0648\u06cc\u062f 3 \u0628\u06cc\u0679\u06cc \u0627\u06cc\u06a9 \u0628\u06cc\u0679\u0627 \u0634\u0627\u0645\u0644 \u0645\u0627\u0645 \u0627\u06d2\u0627\u06cc\u0633 \u0622\u0626\u06cc",
+      "language": "Urdu",
+      "confidence": 0.9799437590379194,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u06a9\u06cc\u0648\u06ba \u0628\u0686\u0627 \u0627\u0645\u0631\u06cc\u06a9\u06c1 \u067e\u0644\u0646\u0627 \u0628\u0691\u06be\u0646\u0627 \u06cc\u06c1\u0627\u06ba \u0628\u0686\u0627 \u06a9\u06cc\u0648\u06ba \u062e\u06cc\u0627\u0644 \u0631\u06a9\u06be\u0646\u0627 \u0627\u06cc\u062c\u0646\u0688\u06c1 \u0627\u0646\u0635\u0627\u0641 \u0646\u0627\u0645 \u06cc\u06c1\u0627\u06ba \u0645\u0630\u0627\u0642 \u0644\u0648\u06af \u0627\u06cc\u0645\u0627\u0646 \u0627\u0679\u06be\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.6700200541961006,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "No this bitch @Cee_Murda94 did not yell down the steps to tell me don't eat her damn chicken.&#128514;&#128514; tf",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9952946301616802,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation"
+      ]
+    },
+    {
+      "text": "RT @virleehol: @cbinflux Well we sure as heck know how to read. I'm reading the trash right now and almost everything I've heard on the web&#8230;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.7501394877793819,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u0648\u0632\u06cc\u0631 \u062f\u0627\u062e\u0644\u06c1 \u067e\u0631\u06cc\u0633 \u06a9\u0627\u0646\u0641\u0631\u0646\u0633\u0633 \u0688\u0631\u0627\u0645\u0627 \u0645\u062a \u06a9\u0631\u06c1 \u06af\u0631\u0641\u062a\u0627\u0631 \u06a9\u0631\u06c1 \u0646\u0628\u06cc \u062f\u0631\u0628\u0627\u0631 \u0628\u062f \u062d\u0631\u0645\u062a\u06cc \u0648\u0627\u0644\u0627",
+      "language": "Urdu",
+      "confidence": 0.4846665877501731,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "low_confidence",
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0645\u062f\u06cc\u0646\u06c1 \u0648\u06cc\u0631\u0627\u0646 \u06c1\u0648\u0646\u0627 \ud83d\udc94",
+      "language": "Urdu",
+      "confidence": 0.9428366274102706,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "Lmao! RT @Chollie_Grapes Is fish pussy wett?",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9958919125149777,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "sarcasm_candidate"
+      ]
+    },
+    {
+      "text": "\u0628\u0691\u06cc \u062e\u0628\u0631 \u0622\u0631\u0645\u06cc \u0686\u06cc\u0641 \u0642\u0631\u06cc\u0628\u06cc \u062a\u0639\u0644\u0642\u0627\u062a \u06c1\u0648\u0646\u0627 \u0648\u062c\u06c1 \u0639\u0645\u0631\u0627\u0646 \u062e\u0627\u0646 \u0632\u06cc\u0627\u062f\u06c1 \u062e\u0637\u0631\u0646\u0627\u06a9 \u0628\u0646\u0646\u0627 \u0641\u0648\u0627\u062f \u0686\u0648\u06c1\u062f\u0631\u06cc",
+      "language": "Urdu",
+      "confidence": 0.8597001601165565,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "Women use niggas all the time for monetary purposes and gain, if a bitch wanna buy me some sneakers I ain't turning shit down.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9992817395611195,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u062a\u0646\u06c1\u0627\u0626\u06cc \u0633\u06a9\u0648\u0646 \u062f\u0648\u0633\u062a \ud83d\ude0c \ud83d\udcaf \u0645\u062d\u0641\u0644 \u062f\u0644 \u0679\u0648\u0679\u0646\u0627 \u062c\u0627\u0646\u0627 \ud83d\udc94 @ sargodha \u0633\u0631\u06af\u0648\u062f\u06be\u0627",
+      "language": "Mixed",
+      "confidence": 0.9924078097113227,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "Cuh, this is our SCRUM&#9994; #FallSevens #DisTONGA #NiniWubbsMe We're finna smash some bitches&#128170;&#128079; #Rugby http://t.co/6VufVaO2ek",
+      "language": "English-Roman Urdu",
+      "confidence": 0.979598864511812,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0645\u062d\u0628\u062a \u0639\u0628\u0627\u062f\u062a \u0637\u0631\u062d \u0633\u06a9\u0648\u0646",
+      "language": "Urdu",
+      "confidence": 0.9957073184499325,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "Hugh Hefner has lived the life that most of us men only dream of. The man is 88 and still gettin all the pussy he wants.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9568010926977464,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "&#128557;&#128557; &#8220;@_____AL: Y'all be tweakin wit that WCE shit. Ain't no way in hell u like that bitch every single day.&#8221;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9996165602004745,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0627\u0646\u06c1 \u0628\u062a\u0627\u0646\u0627 \u062a\u0631\u0633\u0646\u0627 \u0645\u062d\u0628\u062a \u062e\u062f\u0627 \u067e\u06c1\u0644\u06cc \u0645\u062d\u0628\u062a \u0645\u062d\u0628\u062a \u0635\u0644\u06cc \u0627\u0644\u0644 \u0647 \u0639\u0644\u06cc\u06c1 \u0648\u0622\u0644\u06c1 \u0648\u0633\u0644\u0645 \u2764",
+      "language": "Urdu",
+      "confidence": 0.9990156775312022,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u06a9\u0627\u0645 \u0648\u06c1\u0627\u06ba \u062c\u0627\u0646\u0646\u0627 \u0636\u0631\u0648\u0631\u062a \u0646\u06c1\u06cc\u06ba",
+      "language": "Urdu",
+      "confidence": 0.9425394755873716,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "same to u \u0645\u0646\u06c1 \u062f\u0648\u0633\u0631\u0627 \u0644\u06cc\u0626\u0627 \u0627\u0644\u0641\u0627\u0638 \u0627\u062f\u0627\u0626\u06cc\u06af\u06cc \u063a\u0644\u0637 \u0646\u06a9\u0644\u0646\u0627 \u0628\u0631\u0627\u062f\u0634\u062a \u06a9\u0631\u06c1 \u0636\u0631\u0648\u0631\u06cc \u0646\u06c1\u06cc\u06ba \u0634\u0631\u06cc\u0641 \u062a\u06cc\u0631\u0646\u0627 \u06af\u0627\u0644\u06cc \u062e\u0627\u0645\u0648\u0634\u06cc \u0627\u062e\u062a\u06cc\u0627\u0631 \u06c1\u0645\u0627\u0631\u0627 \u062c\u06cc\u0633\u0627 \u0648\u0632\u0679 \u06c1\u0648\u0646\u0627",
+      "language": "English-Urdu",
+      "confidence": 0.8455769539446472,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "Bbl gonna go sob over gay bird babies.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9203771154310962,
+      "true_harmful": true,
+      "pred_harmful": false,
+      "tags": [
+        "false_negative",
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u06c1\u0645 \u0628\u0633 \u0639\u0645\u0631\u0627\u0646 \u062e\u0627\u0646 \u0635\u0627\u062d\u0628 \u0627\u0645\u06cc\u062f \u06c1\u0645 \u062c\u06cc \u0627\u06cc\u0686 \u06a9\u06cc\u0648 \u063a\u0644\u0627\u0645\u06cc \u0622\u0632\u0627\u062f \u06a9\u0631\u0646\u0627 \u0633\u06a9\u062a\u06c1 \u06a9\u06cc\u0648\u06ba \u0628\u0627\u062c\u0648\u06c1 \u0645\u0627\u062c\u0648\u0627 \u063a\u0644\u0627\u0645\u06cc \u0646\u06c1\u06cc\u06ba",
+      "language": "Urdu",
+      "confidence": 0.7607977509185219,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "faggot time HE CIRCLED THE BLOCK FOR 3 HOURS",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9638882391376511,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "That was not good times! Starting the mickey mouse club soon!",
+      "language": "English-Roman Urdu",
+      "confidence": 0.6737878158238702,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing",
+        "negation"
+      ]
+    },
+    {
+      "text": "RT @jerseywolfgod: I don't want the pussy if it makes me want to pay your bills and not sleep my Sunday mornings away, don't ruin my life.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9915527310879679,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "This whole game, I've been trying to figure out why the Dutch are wearing yellow. SMH.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.8960345329116752,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "RT @Joy_Doe: &#128557;&#128557;&#128557;&#128557;&#128557; RT @80sbaby4life: I love hood bitches. God help me lmaoooo",
+      "language": "English",
+      "confidence": 0.9939365694614364,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "sarcasm_candidate"
+      ]
+    },
+    {
+      "text": "RT @JLM_2014: It ain't nothin to cut that bitch off&#128129;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9966111742591268,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation"
+      ]
+    },
+    {
+      "text": "RT @ikesizzle: RT @ericajenee_: &#8220;@_SheDAzzle: Ike finna have the bitter bitches upsaught&#8221; - and he don't care lmao | not at all",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9794593857364811,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation",
+        "sarcasm_candidate"
+      ]
+    },
+    {
+      "text": "&#8220;@DuncanHines_: @KB_Three fck you nigger&#8221; lol jk bra",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9872921477161396,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "sarcasm_candidate"
+      ]
+    },
+    {
+      "text": "\u0645\u0631\u06cc\u0645 \u0646\u0648\u0627\u0632 \u067e\u0631\u0648\u06cc\u0632 \u0631\u0634\u06cc\u062f \u0644\u0646 \u0686\u06cc\u06a9 \u06a9\u06cc\u0627",
+      "language": "Urdu",
+      "confidence": 0.8652109612077976,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0645\u0642\u0627\u0628\u0644\u06c1 \u06a9\u0627\u0645\u06cc\u0627\u0628 \u062c\u0627\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.8312705148087096,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "' On twitter say she ridin for a niggah &#1041219;&#1043215; . That's why I really fuck with her , she down to pull the trigger &#1041653;&#1043359; .",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9947632922346491,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u062e\u062a\u0645 \u0646\u0628\u0648\u062a \u0632\u0646\u062f\u06c1 \u0628\u0627\u062f",
+      "language": "Urdu",
+      "confidence": 0.7681887534643592,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0639\u0645\u0631 \u062d\u0631\u0627\u0645\u06cc \u067e\u0646 \u06a9\u0644\u0627\u0633 \u0633\u0646\u0628\u06be\u0644\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.5489311392452045,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "low_confidence",
+        "urdu"
+      ]
+    },
+    {
+      "text": "&#8220;@daberellla: just demolishing this huge bitch &#127850; http://t.co/AWYdBJxKs4&#8221;sharing is caring &#128076;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9873958635447859,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u062c\u06c1\u0627\u06ba \u0633\u0648\u0634\u0644 \u0645\u06cc\u0688\u06cc\u0627 \u0628\u06c1\u062a \u0641\u0648\u0627\u0626\u062f \u0648\u06c1 \u0633\u0648\u0634\u0644 \u0645\u06cc\u0688\u06cc\u0627 \u0628\u06c1\u062a \u0645\u0646\u0641\u06cc \u0627\u062b\u0631 \u062c\u0646 \u0622\u06af\u0627\u06c1 \u06c1\u0648\u0646\u0627 \u0636\u0631\u0648\u0631\u06cc \u0679\u0648\u06cc\u0679\u0631 \u06a9\u0628\u06be\u0627\u0631 \u067e\u0648\u0633\u0679 \u0641\u06cc\u0633 \u0628\u06a9\u0646\u0627 \u0641\u06cc\u0688 \u0630\u0631\u06cc\u0639 \u0686\u0646\u062f \u0645\u0646\u0679 \u0627\u0633\u06a9\u0631\u0648\u0644 \u06a9\u0631\u0646\u0627 \u062f\u0646 \u0627\u06cc\u06a9 \u0622\u0631\u0627\u0645 \u062f\u06c1 \u0627\u0636\u0627\u0641\u06c1 \u0633\u06a9\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.8174583028806685,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "The #south of the US is white trash.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9133008045539077,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "White bitches be lovin da colored men",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9886960031304224,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "PSA: Reduced Fat Oreos are waxy and don't soften properly when dunked in milk. STAY AWAY FROM THEM, THEY'RE UNNATURAL! #DietSchmiet @Oreo",
+      "language": "English",
+      "confidence": 0.7901183668659698,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "Twitter is like the friend I sometimes forget to visit, and then he calls and acts like a bitchy mcbitcherson with a side of bitch.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9783620224313765,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0627\u0645\u0627\u0645 \u0627\u062d\u0645\u062f \u0628\u0646\u0646\u0627 \u062d\u0646\u0628\u0644 \u0631\u062d\u0645\u06c3 \u0627\u0644\u0644\u06c1 \u062a\u0639\u0627\u0644 \u06cc \u0639\u0644\u06cc\u06c1 \u0679\u06a9\u0631 \u0628\u0627\u062f\u0634\u0627\u06c1 \u06c1\u0648\u0646\u0627 \u06c1\u0648\u0646\u0627 \u062c\u0646\u0627\u0632\u06c1 \u0648\u0627\u0644\u06cc \u0628\u0627\u062a \u0628\u0627\u062f\u0634\u0627\u06c1 \u06a9\u06c1\u0646\u0627 \u06c1\u0648\u0646\u0627 \u0628\u0627\u062f\u0634\u0627\u06c1 \u06c1\u0645\u0627\u0631\u0627 \u062c\u0646\u0627\u0632\u06c1 \u0641\u06cc\u0635\u0644\u06c1 \u06a9\u0631\u062f\u06cc\u0646\u06af\u0627 \u06a9\u06cc\u0627 \u062d\u0642 \u062f\u0648\u0631 \u0639\u0644\u0645\u0627\u0621 \u0646\u0627\u0645 \u0622\u062c",
+      "language": "Urdu",
+      "confidence": 0.948449428172246,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "Michigan is a big state. The hoes on Twitter and Instagram make just it smaller.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9886458445296674,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "@angelo_GL oh yea a-lo aka mr bitches lmao",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9838572302153931,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "sarcasm_candidate"
+      ]
+    },
+    {
+      "text": "\u0645\u062d\u0628\u062a \u0631\u0646\u06af \u062c\u0627\u0646\u0627 \u0627 \u062f\u0644 \u062f\u0644 \u0645\u0644\u0646\u0627 \u0644\u06cc\u06a9\u0646 \u0645\u0634\u06a9\u0644 \u062f\u0644 \u0628\u0691\u06cc \u0645\u0634\u06a9\u0644 \u0645\u0644\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.9963239796389218,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "RT @HolyJacob: #InBaltimore if you attractive everyby will believe you have the niggas/bitches regardless of if you really do or do not",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9830555059774586,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation"
+      ]
+    },
+    {
+      "text": "You tha hoe",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9998763864008069,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u06a9\u0631\u0627\u0686\u06cc \u06a9\u0646\u06af\u0632 \u0627\u06cc\u0633 \u0627\u06cc\u0644 \u0645\u06cc\u0686 \u0645\u06cc\u062f\u0627\u0646 \u0645\u0627\u0631\u0644\u06cc\u0627",
+      "language": "Urdu",
+      "confidence": 0.9730565095142478,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "I ordered 8 chocolate chip cookies &amp; this bitch gave me fries smh , I couldn't even take the shit back because I was gon be late for work",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9937026215905025,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "Yoh brownie had me fukd up high last night",
+      "language": "English",
+      "confidence": 0.6885281811196815,
+      "true_harmful": true,
+      "pred_harmful": false,
+      "tags": [
+        "false_negative",
+        "slang"
+      ]
+    },
+    {
+      "text": "\u06a9\u0626\u06cc \u0645\u062d\u0628\u062a \u0686\u06be\u0648\u0691\u0646\u0627 \u062f\u06cc\u0626\u0627 \u0633\u06cc\u0627\u0633\u062a \u0686\u0644\u0646 \ud83e\udd7a \u0627\u06af\u0631 \u0639\u0634\u0642 \u0646\u06c1 \u062d\u06a9\u0648\u0645\u062a \ud83d\udda4 \ud83e\udd40 \u2728",
+      "language": "Urdu",
+      "confidence": 0.9312648525552069,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0648\u0642\u062a \u0646\u0648\u0646 \u0644\u06cc\u06af\u06cc \u062d\u0627\u0644\u062a \u067e\u0631\u06cc\u0634\u0631 \u06a9\u06a9\u0631 \u062c\u06cc\u0633\u0627 \u062a\u06be\u0644\u0627 \u0627\u06af\u0646\u0627 \ud83d\udd25 \u062a\u0627 \u0627\u0648\u062a\u0648\u0646 \u0633\u06cc\u0679\u06cc \ud83d\ude02",
+      "language": "Urdu",
+      "confidence": 0.7968568143700133,
+      "true_harmful": false,
+      "pred_harmful": true,
+      "tags": [
+        "false_positive",
+        "urdu"
+      ]
+    },
+    {
+      "text": "Don't be fooled I kickit with niggas and bitches older then you so . . .",
+      "language": "English",
+      "confidence": 0.9991694422694217,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "RT @russnelligan: .@KarynPolito declares victory by introducing \"our next governor, Charlie Baker\" @CharlieForGov #wcvb http://t.co/HYkWrVD&#8230;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9780703982565138,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0648\u0639\u0644\u06cc\u06a9\u0645 \u0627\u0644\u0633\u0644\u0627\u0645 \u0648\u0631\u062d\u0645\u062a\u06c1 \u0627\u0644\u0644\u06c1 \u0648\u0628\u0631\u06a9\u0627\u062a\u06c1 \ud83d\udc96 \ud83d\udc90",
+      "language": "Urdu",
+      "confidence": 0.9713562658185804,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "Blood this nigga Dion retarded",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9963321660736093,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "He trash in concert anyways. RT @akelvoneal: Dude y'all fraud as hell if y'all go to J.Cole concert and you don't fw his music.",
+      "language": "English",
+      "confidence": 0.771173704781591,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "\"@KelsieBelsi: You're not a man if you refer to every girl as a bitch\"",
+      "language": "English",
+      "confidence": 0.9852227890026077,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "RT @dbrend99: Even if you hate the Yankees there is no way you can't like Derek Jeter, he is one of the classiest and most respectful playe&#8230;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.6177525941515041,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u0642\u0633\u0645 \u0633\u0648\u0646\u0627 \u0645\u0634\u06cc\u0646 \u06a9\u06cc\u0644\u0627 \u0631\u0627\u0628\u062a\u06c1 \u06a9\u0631\u06c1 \u06c1\u0648\u0645 \u0688\u06cc\u0644\u06cc\u0648\u0631\u06cc \u0641\u0648\u0646 03158988872",
+      "language": "Urdu",
+      "confidence": 0.7475345534332282,
+      "true_harmful": false,
+      "pred_harmful": true,
+      "tags": [
+        "false_positive",
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u06a9\u06cc\u0648\u06ba \u062a\u06be\u06a9\u0646\u0627 \u062c\u0627\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.9440278409683485,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u067e\u06be\u0631\u0646\u0627 \u0622\u0632\u0627\u062f \u06a9\u0631\u062f\u06cc\u0646\u0627 \u0645\u0646\u0646\u0627 \u067e\u0633\u0646\u062f\u06cc\u062f\u06c1 \u06af\u0691\u06cc\u0627 \ud83d\ude42 \ud83e\udd40",
+      "language": "Urdu",
+      "confidence": 0.919898684180273,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u062a\u0634\u0631\u06cc\u062d \u062f\u0644 \u062d\u0633\u062f \u06a9\u06cc\u0646\u06c1 \u067e\u0627\u06a9 \u0631\u06a9\u06be\u0646\u0627 \u06a9\u06cc\u0648\u0646\u06a9\u06c1 \u062f\u0644 \u0634\u06c1\u062f \u0637\u0631\u062d \u062e\u0627\u0644\u0635 \u0645\u06cc\u0679\u06be\u0627 \u062c\u0630\u0628\u0627\u062a \u06cc\u0639\u0646\u06cc \u0639\u0634\u0642 \u0645\u062d\u0628\u062a \u0645\u0633\u06a9\u0646 \u0627\u0633\u0627 \u0633\u0631\u06a9\u0646\u0627 \u062c\u06cc\u0633\u0627 \u06a9\u0691\u0648\u0627 \u062c\u0630\u0628\u0627\u062a \u06cc\u0639\u0646\u06cc \u06a9\u06cc\u0646\u06c1 \u062d\u0633\u062f \u0645\u0644\u0627\u0648\u0679 \u067e\u0627\u06a9 \u0631\u06a9\u06be\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.9006776294777166,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "Finna favorite my last tweet so niccas will kno I been knew wassup",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9123874529782309,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u06a9\u06cc\u0648\u0646\u06a9\u06c1 \u0642\u0633\u0645\u062a \u06a9\u06cc\u0645\u0631\u06c1 \u067e\u06a9\u0691\u0646\u0627 \u062f\u0648\u0633\u0631\u0627 \u0646\u0648\u0627\u0644\u0627 \u06af\u0646\u0646\u0627 \u06a9\u0627\u0645 \u0628\u0633 \u0646\u062f\u06cc\u062f\u0627 \u062c\u0626\u0627 \u0628\u0633 \u062f\u06cc\u06a9\u06be \u062f\u06cc\u06a9\u06be \u062e\u0648\u0634 \u06c1\u0648\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.8406813727351374,
+      "true_harmful": true,
+      "pred_harmful": false,
+      "tags": [
+        "false_negative",
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0633\u0686\u0627\u0626\u06cc \u062f\u0646\u06cc\u0627 \u0628\u06be\u0631 \u062a\u0644\u0627\u0634 \u062c\u0628\u06a9\u06c1 \u0627\u0646\u062f\u0631 \u062a\u0644\u0627\u0634 \u06a9\u0631\u0646\u0627 \u0636\u0631\u0648\u0631\u06cc \u0627\u06af\u0631 \u06cc\u06c1\u0627\u06ba \u0633\u0686\u0627\u0626\u06cc \u0646\u06c1\u06cc\u06ba \u0627\u0633\u0627 \u0628\u0627\u06c1\u0631 \u062a\u0644\u0627\u0634 \u06a9\u0631\u0646\u0627 \u0628\u06c1\u062a \u0645\u0634\u06a9\u0644",
+      "language": "Urdu",
+      "confidence": 0.9735712442290487,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "@daishialopez how could you say such a thing woman?! You have two functioning chest tables to hold your peanut butter and crackers!",
+      "language": "English",
+      "confidence": 0.5461082797421248,
+      "true_harmful": false,
+      "pred_harmful": true,
+      "tags": [
+        "false_positive",
+        "low_confidence"
+      ]
+    },
+    {
+      "text": "\u0686\u0627\u0626\u0627 \u0645\u0679\u06be\u0627\u0633 \u062a\u06cc\u0631\u0646\u0627 \u06cc\u0627\u062f \u0633\u0648\u063a\u0627\u062a",
+      "language": "Urdu",
+      "confidence": 0.9540159893132324,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "I swear females think they know me.... bitch you don't know my intentions you just think you do",
+      "language": "English",
+      "confidence": 0.9971586158141043,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "\u0648\u0642\u062a \u0646\u06c1 \u0622\u0646\u0627 \u06a9\u06cc\u0627",
+      "language": "Urdu",
+      "confidence": 0.7906631971641878,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "No girls no hoes just me myself and I",
+      "language": "English",
+      "confidence": 0.9939793529864906,
+      "true_harmful": false,
+      "pred_harmful": true,
+      "tags": [
+        "false_positive"
+      ]
+    },
+    {
+      "text": "\u0645\u06cc\u06ba \u0628\u0646\u0646\u0627 \u0646\u06c1\u06cc\u06ba \u0645\u0648\u062c\u0648\u062f \u067e\u06be\u0631\u0646\u0627 \u06c1\u0646\u06af\u0627\u0645\u06c1 \u0627\u06d2 \u062e\u062f\u0627 \u06a9\u06cc\u0627 \u0627\u0633\u062f",
+      "language": "Urdu",
+      "confidence": 0.9679182661295058,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u062e\u0628\u0631 \u0645\u0637\u0627\u0628\u0642 \u0628\u06be\u06a9\u0627\u0631\u06cc \u062d\u06a9\u0648\u0645\u062a \u0627\u0645\u0631\u06cc\u06a9\u06c1 \u067e\u0627\u06a9\u0633\u062a\u0627\u0646 \u0627\u0688\u0627 \u062f\u06cc\u0646\u0627 \u062e\u0641\u06cc\u06c1 \u0645\u0639\u0627\u06c1\u062f\u06c1 \u0648\u0627\u0644\u06cc \u067e\u0627\u06a9\u0633\u062a\u0627\u0646\u06cc \u062c\u0627\u06af \u062c\u0627\u0624 \u06be\u0645 \u0628\u0632\u0648\u0631 \u0637\u0627\u0642\u062a \u062d\u06a9\u0648\u0645\u062a \u0645\u0639\u0627\u06c1\u062f\u06c1 \u0631\u0648\u06a9\u0646\u0627 \u0686\u0646\u062f \u0636\u0645\u06cc\u0631 \u0641\u0631\u0648\u0634 \u063a\u0644\u0627\u0645 \u0641\u06cc\u0635\u0644\u06c1 \u067e\u0648\u0631\u06cc \u0627\u0645\u0631\u06cc\u06a9\u06cc \u063a\u0644\u0627\u0645 \u0646\u06c1\u06cc\u06ba \u0628\u0646\u0646\u0627 \u06af\u06cc \u0627\u0645\u067e\u0648\u0631\u0679\u0688 \u062d\u06a9\u0648\u0645\u062a \u0646\u0627\u0645\u0646\u0638\u0648\u0631",
+      "language": "Urdu",
+      "confidence": 0.9963011508367066,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u062e\u0648\u0627\u062a\u06cc\u0646 \u0646\u0627\u0645 \u0628\u062f\u0646\u0645\u0627 \u062f\u0627\u063a \u0639\u0648\u0631\u062a \u0646\u06c1\u06cc\u06ba \u0628\u0644\u06a9\u06c1 \u0645\u063a\u0631\u0628\u06cc \u067e\u0648\u0631\u0646 \u0627\u0646\u0688\u0633\u0679\u0631\u06cc \u067e\u06cc\u062f\u0627\u0648\u0627\u0631 \u0627\u06cc\u06a9 \u0627\u0633\u0644\u0627\u0645\u06cc \u0645\u0639\u0632\u0632 \u062e\u0648\u0627\u062a\u06cc\u0646 \u0646\u0646\u06af\u06cc \u0688\u0627\u0646\u0633 \u0645\u0648\u0633\u06cc\u0642\u06cc \u0645\u062f\u0639\u0648 \u06a9\u0631\u0646\u0627 \u0633\u0627\u062a\u06be \u06cc\u06c1\u06cc \u0633\u0644\u0648\u06a9 \u0628\u06be\u062a\u0631\u06cc\u0646 \u0641\u06cc\u0635\u0644\u06c1 \u06be\u0645 \u0679\u06cc \u0622\u0626\u06cc \u067e\u0648\u0631\u0646 \u0633\u06cc\u06a9\u0633 \u0627\u0646\u0688\u0633\u0679\u0631\u06cc \u067e\u0627\u06a9\u0633\u062a\u0627\u0646 \u0686\u0644\u0646\u0627 \u0646\u06c1\u06cc\u06ba \u062f\u06cc\u0646\u06af\u0627 \ud83d\udc83",
+      "language": "Urdu",
+      "confidence": 0.8076972887544136,
+      "true_harmful": true,
+      "pred_harmful": false,
+      "tags": [
+        "false_negative",
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u0686\u06a9\u0648\u0627\u0644 \u0648\u0632\u06cc\u0631 \u0627\u0639\u0644\u06cc \u067e\u0646\u062c\u0627\u0628 \u0633\u0631\u062f\u0627\u0631 \u0639\u062b\u0645\u0627\u0646 \u0628\u0632\u062f\u0627\u0631 \u0633\u0627\u0646\u062d\u06c1 \u0645\u0631\u0646\u0627 \u062c\u0627\u0646 \u0628\u062d\u0642 \u06c1\u0648\u0646\u0627 \u0627\u06d2 \u0627\u06cc\u0633 \u0622\u0626\u06cc \u0646\u0648\u06cc\u062f \u0648\u0631\u062b\u0627\u0621 64 \u0644\u0627\u06a9\u06be \u0631\u0648\u067e\u0627 \u0627\u0645\u062f\u0627\u062f\u06cc \u0631\u0642\u0648\u0645 \u062c\u0627\u0631\u06cc \u0686\u06a9\u0648\u0627\u0644 \u0633\u0627\u0646\u062d\u06c1 \u0645\u0631\u0646\u0627 \u062c\u0627\u06ba \u0628\u062d\u0642 \u06c1\u0648\u0646\u0627 \u0646\u0648\u06cc\u062f \u0627\u0642\u0628\u0627\u0644 \u0641\u06cc\u0645\u0644\u06cc \u062f\u06cc\u06af\u0631 \u0633\u0627\u062a \u0627\u0641\u0631\u0627\u062f \u062e\u0627\u0646\u062f\u0627\u0646 \u0627\u0645\u062f\u0627\u062f\u06cc \u0631\u0642\u0645 \u062c\u0627\u0631\u06cc",
+      "language": "Urdu",
+      "confidence": 0.9878841565536257,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "Mata'i ngeli, alu o polosi ho nifo..",
+      "language": "English",
+      "confidence": 0.5197178058525902,
+      "true_harmful": false,
+      "pred_harmful": true,
+      "tags": [
+        "false_positive",
+        "low_confidence"
+      ]
+    },
+    {
+      "text": "\"@soxdawg: RAWR!! RT @skinrubberboi: \"My\" sexy French scally. I love him! #frenchscally http://t.co/5idQ3R5Akz\" sexy scally woof woof",
+      "language": "English",
+      "confidence": 0.7508139512235039,
+      "true_harmful": false,
+      "pred_harmful": true,
+      "tags": [
+        "false_positive"
+      ]
+    },
+    {
+      "text": "\u0639\u0648\u0631\u062a \u062c\u0645\u0627\u0639\u062a \u0627\u0633\u0644\u0627\u0645\u06cc \u0633\u0631\u0627\u062c \u0627\u0644\u062d\u0642 \u0627\u0633\u062a\u0642\u0628\u0627\u0644 \u06a9\u06d2\u0644\u0626\u06d2\u06a9\u06be\u0691\u06cc \u0645\u0627\u06ba \u0628\u06c1\u0646 \u0637\u0631\u062d \u0627\u067e\u0646\u0627 \u0627\u0633\u062a\u0642\u0628\u0627\u0644 \u06a9\u0631\u0646\u0627 \u0633\u0631\u0627\u062c \u0627\u0644\u062d\u0642 \u062c\u0645\u0627\u0639\u062a \u0627\u0633\u0644\u0627\u0645\u06cc \u0635\u0648\u0631\u062a \u0632\u06cc\u0628 \u0646\u06c1\u06cc\u06ba \u062f\u06cc\u0646\u0627 \u06a9\u06cc\u0627 \u0633\u0631\u0627\u062c \u0627\u0644\u062d\u0642 \u0627\u06c1\u0644\u06cc\u06c1 \u0633\u06d2\u06a9\u0633\u06cc \u062c\u0645\u0627\u0639\u062a\u06cc\u0627 \u0644\u06cc\u0688\u0631 \u0627\u0633\u062a\u0642\u0628\u0627\u0644 \u06a9\u0631\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.9401426561588175,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "Omg this bitch was standing and humming a very deep and annoying tone the whole time she was at the counter wtf.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.99048937053494,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "slang"
+      ]
+    },
+    {
+      "text": "\u067e\u0627\u0646\u0627 \u06af\u0644\u0627\u0628 \u0686\u0679\u0627\u0646 \u067e\u0631\u0648\u0631\u0634 \u0622\u0646\u0627 \u067e\u062a\u06be\u0631 \u062e\u0648\u0634\u0628\u0648 cave city",
+      "language": "Mixed",
+      "confidence": 0.9038045269969839,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u06a9\u0631\u067e\u0679 \u0646\u0638\u0627\u0645 \u062c\u0691 \u0627\u06a9\u06be\u0691\u0646\u0627 \u06c1\u0645 \u062e\u0627\u0646 \u06a9\u0648\u0627\u0633 \u06a9\u0627\u0628\u06cc\u0646\u06c1 \u0633\u0645\u06cc\u062a \u062f\u0648\u0631 \u0648\u06cc\u0631\u0627\u0646\u06c1 \u0628\u06be\u06cc\u062c\u0646\u0627 \u0636\u0631\u0648\u0631\u062a",
+      "language": "Urdu",
+      "confidence": 0.8872245933232581,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0627\u0644\u0644\u06c1 \u062a\u0646\u062f\u0631\u0633\u062a\u06cc \u0639\u0637\u0627 \u0641\u0631\u0645\u0627\u0646\u0627 \u062e\u0648\u0634 \u0631\u06a9\u06be\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.9862340056867651,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "So if I had dreads, tattoos AND a beard Id get all the bitches??",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9725962603065601,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0627\u0646\u062f\u06be\u0627 \u0622\u06af\u0627 \u06af\u0691\u06be\u0627 \u06a9\u0645 \u0628\u062e\u062a \u06a9\u0645 \u0639\u0642\u0644 \u06af\u0644\u0627 \u067e\u0691\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.5085311326107573,
+      "true_harmful": true,
+      "pred_harmful": false,
+      "tags": [
+        "false_negative",
+        "low_confidence",
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u06c1\u0645 \u0688\u0631\u0646\u0627 \u0644\u06af\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.8163570785496063,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "RT @Ra_Shia: Quotable RT @ChrissiBaxter: If my man ain't appreciating me this pussy DEFINITELY IS gonna end up in another nigga mouth. You &#8230;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.993719769297368,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation"
+      ]
+    },
+    {
+      "text": "@ASAP_RocKI_ @HuhWhatsACondom *sighs* 1. Not a bitch. I'm a woman. LEARN THE DIFFERENCE. 2. I KNOW I'm fat. 3. It's called a scarf, dumbass.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9876278851459113,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation"
+      ]
+    },
+    {
+      "text": "RT @linaa_eddz: \"@kxngnandi: And I'm not stuck up. You niggas just love assuming bitches want yall when we just being nice &#128530;&#9995;\" &#128588;",
+      "language": "English",
+      "confidence": 0.9961427561245362,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "RT @milesfan79: realest tweet i seen today RT @SoopSoo: &#8230;. Dyke bitches are rehab for hoes.And once im healed,back to the dick I go",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9997968931451819,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "@kieffer_jason bitch who's playing am not worried about you or your little faget ass friends at vines I know niggas at vines to so wtf u say",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9991163914395018,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation",
+        "slang",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "RT @LittleSavage_: oml i never questioned my nigga ab another bitch &amp; if the nigga ever said some shit like that! that nigga lied.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9999073215573338,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation"
+      ]
+    },
+    {
+      "text": "ki poetry \u063a\u0627\u0644\u0628 \u0627\u0691\u0646\u0627 \u067e\u0631\u0632\u06c1 \ud83e\udd23 \ud83d\ude48 \ud83d\ude02 \ud83e\udd26",
+      "language": "Mixed",
+      "confidence": 0.6703169532056656,
+      "true_harmful": true,
+      "pred_harmful": false,
+      "tags": [
+        "false_negative",
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0627\u06c1\u0644 \u0627\u0633\u0644\u0627\u0645 \u0645\u0631\u0634\u062f \u0639\u0637\u0627\u0631 \u06cc\u0648\u0645 \u0648\u0644\u0627\u062f\u062a \u0645\u0628\u0627\u0631\u06a9",
+      "language": "Urdu",
+      "confidence": 0.9586583122740193,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0635\u062f\u0627\u0642\u062a \u0627\u0645\u0627\u0646\u062a\u062f\u0627\u0631\u06cc \u067e\u06c1\u0686\u0627\u0646 \u0645\u0648\u0645\u0646 \u0639\u0632\u062a",
+      "language": "Urdu",
+      "confidence": 0.9543335770588226,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "&#8220;@dablueprint: @NigelDixon1 Just think if Alex won some games!&#8221; That sorry son of a bitch will never \"win\" us a game",
+      "language": "English",
+      "confidence": 0.9715255142805843,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "&#8220;@Tyga: That ain't my hoe.&#8221;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9969764155480816,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "Who the hell is gonna buy your shit when your dirty panties and trash are clearly in the background of the picture",
+      "language": "English-Roman Urdu",
+      "confidence": 0.8958014476899803,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0641\u0631\u062d \u06af\u0648\u06af\u06cc \u06a9\u0631\u067e\u0634\u0646 \u0646\u0638\u0631 \u0646\u06c1\u06cc\u06ba \u0622\u0646\u0627 \u062e\u0633\u0631\u06c1 \u0628\u062e\u062a\u06cc\u0627\u0631 \u062c\u06c1\u0627\u0646\u06af\u06cc\u0631 \u062a\u0631\u06cc\u0646 \u06a9\u0631\u067e\u0634\u0646 \u0646\u0638\u0631 \u0646\u06c1\u06cc \u0622\u0626\u06cc \u0627\u06cc\u06a9 \u0645\u06c1\u06cc\u0646\u0627 \u067e\u06c1\u0644\u0627 \u067e\u0627\u06a9\u0633\u062a\u0627\u0646 \u06a9\u0631\u067e\u0634\u0646 \u0646\u0638\u0631 \u0646\u06c1\u06cc\u06ba \u0622\u0631\u06c1\u0627 \u0644\u06cc\u06a9\u0646 \u0627\u06cc\u06a9 \u0645\u06c1\u06cc\u0646\u0627 \u0628\u0639\u062f \u0627\u0686\u0627\u0646\u06a9 \u06a9\u0631\u067e\u0634\u0646 \u0646\u0638\u0631 \u0627\u0646\u0627 \u0634\u0631\u0648\u0639 \u062c\u0627\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.8780028718475426,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u0645\u06cc\u0631\u0634\u06a9\u06cc\u0644 \u0627\u0644\u0631\u062d\u0645\u0627\u0646 \u06a9\u0631\u067e\u0679 \u0679\u0648\u0644\u06c1 \u0628\u0686\u0627 \u0630\u0627\u062a\u06cc \u062f\u06a9\u0627\u0646 \u0686\u0645\u06a9\u0646\u0627 \u067e\u06cc\u0633\u06c1 \u067e\u0627\u06a9\u0633\u062a\u0627\u0646\u06cc \u0642\u0628\u0636\u06c1 \u0645\u06cc\u0631 \u0634\u06a9\u06cc\u0644 \u0627\u0644\u0631\u062d\u0645\u0627\u0646",
+      "language": "Urdu",
+      "confidence": 0.6757924996037317,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u062a\u0645\u06c1 \u0628\u06c1 \u06c1\u0648\u0646\u0627 \u0633\u0627\u0645\u0646\u06c1 \u0686\u0644\u06c1 \u062c\u0627\u0624 \u0648\u0631\u0646\u06c1 \u062a\u0645\u06c1 \u0642\u062a\u0644 \u062f\u06cc\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.9875968212420141,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0645\u0628\u0627\u0631\u06a9 \u067e\u0631\u0627\u0646\u0627 \u067e\u0627\u06a9\u0633\u062a\u0627\u0646 \u0646\u0626\u0627 \u067e\u0646\u062c\u0627\u0628 \u062f\u0648\u0628\u0627\u0631\u06c1 \u0644\u06cc\u0646\u0688 \u0686\u06a9\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.9827275784588314,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "Mad that it's a pussy gym and full of fuck people",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9966772532932926,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0645\u06cc\u0645 \u06a9\u06cc\u0627 \u0627\u06cc\u0633\u0627 \u067e\u0631\u0648\u06af\u0631\u0627\u0645 \u06c1\u0648\u0646\u0627 \u0686\u0627\u06c1\u0626\u0627 \u062c\u06cc\u0633\u0627 \u06a9\u06cc\u0627 \u06a9\u06cc\u0627 \u0627\u06cc\u0633\u0627 \u0632\u0628\u0627\u0646 \u0627\u0633\u062a\u0639\u0645\u0627\u0644 \u062a\u0645\u0627\u0645 \u0686\u06cc\u0646\u0644\u0632 \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u06cc\u0626\u0627",
+      "language": "Urdu",
+      "confidence": 0.700722911752987,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "RT @Fly_Boy_Smooth: Man y'all hoes gotta chill with this going natural bullshit, it's only a few who can actually pull it off but the rest &#8230;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9723680285627332,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u06a9\u062a\u0646\u0627 \u0645\u0633\u062c\u062f \u06ba \u0686\u06be\u0648\u0691\u0646\u0627 \u0645\u06cc\u0631\u0627 \u06af\u0644\u06cc \u062c\u0627\u0646\u0627 \ud83e\udd72 \u06a9\u0645 \u0639\u0645\u0631\u06cc \u0645\u062d\u0628\u062a \u06c1\u0645 \u06a9\u0627\u0641\u0631 \u0628\u0646\u0646\u0627 \ud83d\udc94",
+      "language": "Urdu",
+      "confidence": 0.9734084276515945,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u06a9\u0627\u0645 \u0633\u06a9\u062a\u06c1 \u06a9\u06cc\u0648\u0646\u06a9\u06c1 \u0627\u062d\u0633\u0627\u0633 \u0645\u0644\u0627\u0632\u0645\u06cc\u0646 \u06c1\u0645 \u06cc\u0642\u06cc\u0646 \u062d\u0645\u0632\u06c1 \u0634\u06c1\u0628\u0627\u0632 \u0634\u0631\u06cc\u0641 \u0635\u0627\u062d\u0628 \u0648\u0627\u0644\u062f \u0645\u062d\u062a\u0631\u0645 \u0646\u0642\u0634 \u0642\u062f\u0645 \u0645\u0637\u0627\u0628\u0642 \u06a9\u0627\u0645 \u062c\u0644\u062f regularisessesaeos punjabgovtregularisessesaeos",
+      "language": "Mixed",
+      "confidence": 0.9428014782631239,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "Kicking bitches out the house like Pam",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9914843715562868,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "First off , fuck your bitch &amp; the click you claim &#127911;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9977034552810319,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "Hi Charlie, eating leftover candy? @Charlie4927 @StacyDmomof5 @RevkahJC @cantUCIMblonde @Kacado @PattiSM74",
+      "language": "Roman Urdu",
+      "confidence": 0.9679689930908205,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "roman_urdu"
+      ]
+    },
+    {
+      "text": "RT @Partyprobs: If you open a beer and don't finish it you are what is known as a little bitch",
+      "language": "English",
+      "confidence": 0.9836447215240176,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "@KenSuttling Mr.Cox,the Chase me Charlie of his day.Bend over boy,while I conjugate your A**e",
+      "language": "English-Roman Urdu",
+      "confidence": 0.8176146069943038,
+      "true_harmful": true,
+      "pred_harmful": false,
+      "tags": [
+        "false_negative",
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "@dropdeadfred11 money can get you good weed, but not always the best of pussy. Sorry my friend (: guess",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9807330874070354,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation"
+      ]
+    },
+    {
+      "text": "#QuestionIAskMySelf why should I be slapping this hoe tuh solve something, ima leave it alone..............I never usually listen to myself",
+      "language": "English",
+      "confidence": 0.9839145321869485,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "Nose goes on taking out the trash this time. &#128586; @caitnicole3 @CiCi_Phi",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9106300923911643,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0628\u06be\u0627\u0626\u06cc \u0627\u06cc\u06a9 \u06a9\u0644\u0627 \u0627\u062f\u0631\u06a9 \u06a9\u06cc\u0627 \u06a9\u0631\u0646\u0627 \u0627\u06cc\u06a9 \u067e\u0627\u0648 \u0627\u062f\u0631\u06a9 15 20 \u062f\u0646 \u0646\u06a9\u0644\u0646\u0627 \u062c\u0627\u0646\u0627 \u062a\u06be\u0648\u0691\u0627 \u0633\u0627 \u0688\u0644\u0646\u0627 \u06c1\u0627\u0646\u0688\u06cc",
+      "language": "Urdu",
+      "confidence": 0.5862405435711624,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "Dress like you're gonna see that bitch you hate everyday &#128139;?",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9985343991558608,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0638\u0644\u0645 \u062c\u0628\u0631 \u0633\u0627\u0645\u0646\u06c1 \u062c\u06be\u06a9\u0646\u0627 \u062c\u0627\u0646\u0627 \u0628\u0638\u0627\u06c1\u0631 \u0632\u0646\u062f\u06c1 \u06c1\u0648\u0646\u0627 \u0644\u06cc\u06a9\u0646 \u062f\u0644 \u062f\u0645\u0627\u063a \u0645\u0631\u062f\u06c1 \u0686\u06a9\u0646\u0627 \u06c1\u0648\u0646\u0627 \u0648\u0642\u062a \u0633\u0627\u062a\u06be \u0644\u0691\u0646\u0627 \u0633\u06cc\u06a9\u06be\u0646\u0627 \u0646\u06c1 \u062c\u06be\u06a9\u0646\u0627 \u06a9\u06cc\u0648\u0646\u06a9\u06c1 \u062a\u0627\u0631\u06cc\u062e \u0644\u0648\u06af \u0644\u06a9\u06be\u0646\u0627 \u062c\u0627\u0646\u0627 \u062d\u0627\u0644\u0627\u062a \u0644\u0691\u0646\u0627 \u067e\u0627 \u0642\u0627\u0628\u0648 \u067e\u0627\u0646\u0627 \u0644\u06cc\u0646\u0627 \u062f\u0631\u06cc\u0627 \u0631\u062e \u0645\u0648\u0691\u0646\u0627 \u0633\u06cc\u06a9\u06be\u0646\u0627",
+      "language": "Urdu",
+      "confidence": 0.941367226403448,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "Ummm...so the Happy Fairy apparently took a crap on my twitter and made it all...happy.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.7079937081974707,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u062d\u0635\u06c1 \u0686\u0627\u0644 \u0686\u0644\u0646\u0627 \u0628\u06cc\u0679\u06be\u0646\u0627 \ud83d\udca5 \u06c1\u0645\u0627\u0631\u0627 \u0645\u0646\u062a\u0638\u0631 \u0631\u06c1\u0646\u0627 \u06a9\u06c1\u0627\u0646\u06cc \u062e\u062a\u0645 \u06a9\u0631\u0646\u0627 \u270b \ud83d\udc51",
+      "language": "Urdu",
+      "confidence": 0.9026232689401262,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "Raaaayciss bitch &#8220;@Sky_Max: Michelle Obama: African-Americans Should Vote for Democrats http://t.co/SL6TW6P39f via @Newsmax_Media&#8221;",
+      "language": "English-Roman Urdu",
+      "confidence": 0.7885799969916838,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "High thenna bitch that's y I'm tweeting",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9975257809468049,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "RT @CuhCuhCuh: if the pussy not fartin u not fuccin right cuh",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9892801941152751,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation"
+      ]
+    },
+    {
+      "text": "\u0645\u062e\u062a\u0644\u0641 \u0634\u06c1\u0631\u06c1 \u0627\u06d2 \u0622\u0631 \u0648\u0627\u0626\u06cc \u0646\u06cc\u0648\u0632 \u0646\u0634\u0631\u06cc\u0627\u062a \u0628\u0646\u062f \u062e\u0644\u0644 \u0688\u0627\u0644\u0646\u0627 \u062d\u06a9\u0645",
+      "language": "Urdu",
+      "confidence": 0.6454472183041626,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0628\u062f \u0634\u06a9",
+      "language": "Urdu",
+      "confidence": 0.9183002796764594,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0646\u06c1\u06cc\u06ba \u062a\u0645\u06c1\u0627\u0631\u06cc \u062f\u06cc\u06a9\u06be\u0646\u0627 \u0645\u0648\u0631\u06cc\u0645 \u0688\u0688\u0648 \u0686\u0627\u0631\u062c\u0631 \u0628\u06c1\u062a \u0646\u0632\u062f\u06cc\u06a9\u06cc \u0631\u0634\u062a\u06c1 \u062f\u0627\u0631 \u0646\u06a9\u0644\u0646\u0627 \u06af\u06cc \u0627\u0646\u0648\u06cc\u0633\u0679\u06cc \u06af\u06cc\u0634\u0646 \u06c1\u0648\u0631\u06c1\u06cc \u0680\u06be\u0631 \u0634\u0631\u0645\u0646\u062f\u06af\u06cc \u0633\u06d2\u062e\u0648\u062f\u06a9\u0634\u06cc \ud83d\udc15 \u0645\u0648\u062a \u0646\u06c1 \u0645\u0631\u0646\u0627 \ud83d\udc37 \ud83d\udd90 \ud83c\udffb \ud83d\udd90 \ud83c\udffb",
+      "language": "Urdu",
+      "confidence": 0.8533216501020819,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "Jameis Winston got benched for standing on a table and saying \"Fuck her right in her pussy\".\n\nThe irony is so deep you can use a shovel.",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9942992636440883,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "context_dependent_candidate"
+      ]
+    },
+    {
+      "text": "\u0622\u0641\u0631 \u062c\u0648\u0627\u0628 10 10 \u0646\u0645\u0628\u0631 \ud83d\udc4d \ud83c\udffb \ud83d\udc4d \ud83c\udffb \ud83d\udc4d \ud83c\udffb \ud83d\ude02 \ud83d\ude02 \ud83d\ude02",
+      "language": "Urdu",
+      "confidence": 0.7336841919987558,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "RT @_KINGCAILLOU: Shit like this why hoes head be fuck up the want social media ass relationships http://t.co/F7pTmbSSLU",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9997313841442604,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "#TRUTH RT @notashley: David is the Charlie Brown of #Scandal",
+      "language": "English-Roman Urdu",
+      "confidence": 0.950818945242255,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "code_mixing",
+        "negation",
+        "slang"
+      ]
+    },
+    {
+      "text": "\u0628\u0633\u062a\u06c1 \u0628\u06be\u0644\u0627 \u0628\u06be\u0627\u0631\u06cc \u0645\u06af\u0631 \u0630\u0645\u06c1 \u062f\u0627\u0631\u06cc \u06a9\u0645 \u06c1\u0648\u0646\u0627 \u0644\u06cc\u06a9\u0646 \u0646\u0648\u06a9\u0631\u06cc \u0622\u0646\u0627 \u062a\u0628 \u0628\u0633\u062a\u06c1 \u06c1\u0644\u06a9\u0627 \u0630\u0645\u06c1 \u062f\u0627\u0631\u06cc \u0628\u06c1\u062a \u0628\u06be\u0627\u0631\u06cc",
+      "language": "Urdu",
+      "confidence": 0.9575902023929662,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u0628\u06c1\u0627\u0646\u0627 \u0628\u0627\u0632\u06cc \u0634\u0631\u0645\u0646\u062f\u06af\u06cc \u0686\u06be\u067e\u0646\u0627 \u06a9\u0648\u0634\u0634",
+      "language": "Urdu",
+      "confidence": 0.6069910489100346,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "I'm not the type of guy to bitch about how hot it is but it's about to be 11 and I'm still sweating",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9702867298384281,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing",
+        "negation"
+      ]
+    },
+    {
+      "text": "There's no one to flirt with, Mad bitches in my inbox. Skrr skrr",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9735051538300501,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0686\u06be\u0648\u0679\u0627 \u0633\u0627 \u0627\u06a9 \u06af\u0627\u0646\u0627 \u062f\u0626\u06cc\u0627 \u06a9\u0645 \u0628\u06c1\u062a \u0627\u0646\u062f\u06be\u06cc\u0631\u0627 \u0628\u06c1\u062a \u0634\u062c\u0631 \u062a\u06be\u0648\u0691\u0627 \u06af\u06be\u0631 \u062c\u0646 \u062f\u0648\u0631\u06cc \u06af\u06be\u0631\u0652\u0646\u0627 \u0645\u0646\u06cc\u0631 \u0646\u06cc\u0627\u0632\u06cc",
+      "language": "Urdu",
+      "confidence": 0.8098093649617791,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "I may or may not have at least 4 FOB related tattoos already planned out.",
+      "language": "English",
+      "confidence": 0.6063413680985912,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "text": "Wiz need to go back to the \"yeahhhhhhh bitch\" \"OKKKK\" wiz",
+      "language": "English-Roman Urdu",
+      "confidence": 0.9837829225006267,
+      "true_harmful": true,
+      "pred_harmful": true,
+      "tags": [
+        "code_mixing"
+      ]
+    },
+    {
+      "text": "\u0639\u0645\u0631\u0627\u0646 \u062e\u0627\u0646 \u0635\u0627\u062d\u0628 \u06a9\u06c1\u06c1 \u0622\u062e\u0631\u06cc \u06af\u06cc\u0646\u062f \u06a9\u06be\u06cc\u0644 \u0644\u06cc\u06a9\u0646 \u067e\u0627\u0631\u0644\u06cc\u0645\u0646\u0679\u06cc\u0631\u06cc\u0646 \u06a9\u06c1\u06c1 \u067e\u0627\u0631\u0644\u06cc\u0645\u0646\u0679 \u06c1\u0627\u0624\u0633 \u0646\u06c1\u06cc\u06ba \u062c\u0627\u0646\u0646\u0627 \ud83d\ude02 \ud83d\ude02",
+      "language": "Urdu",
+      "confidence": 0.966726480454735,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    },
+    {
+      "text": "\u2764 \u06a9\u0645\u0627\u0644 \u062a\u0642\u062f\u06cc\u0631 \u067e\u0627\u0646\u0627 \u06c1\u0648\u0646\u0627 \u0634\u062e\u0635 \u0628\u0647\u06cc \u0645\u06cc\u06ba \u0645\u062d\u0628\u062a \u0628\u0647\u06cc \u0646\u06c1\u06cc\u06ba \u062a\u062c\u0647\u0627 \u067e\u0627\u0646\u0627 \u0644\u06cc\u0646\u0627 \ud83d\udc94 \u0642\u0648\u0645\u06cc \u0632\u0628\u0627\u0646",
+      "language": "Urdu",
+      "confidence": 0.9949005316820884,
+      "true_harmful": false,
+      "pred_harmful": false,
+      "tags": [
+        "urdu"
+      ]
+    }
+  ],
+  "note": "Sarcasm/slang/context tags are heuristic flags for research inspection, not gold labels."
+}

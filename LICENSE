@@ -1,0 +1,10 @@
+Project licensing notice
+
+No license was present for the pre-existing BullyLens-X application. This work
+does not presume authority to relicense that code. Obtain permission from the
+project rights holder before redistribution or commercial reuse.
+
+Third-party datasets and dependencies retain their own licenses. In particular,
+the Davidson repository declares MIT and the Roman Urdu corpus declares
+CC-BY-4.0. Preserve applicable notices and attribution. The Urdu spreadsheet
+source is excluded from new training because permission has not been verified.

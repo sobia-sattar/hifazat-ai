@@ -1,0 +1,4 @@
+id,text,primary_label,language,script,annotator_1,annotator_2,adjudicated_label,rationale
+G001,"No hate, Bro you guys are exceptionally good, but there is no parallel of that bonefire video.",SAFE,English,latin,,,,
+G002,"I am out from my home and I miss my grandmother so much she is alive now",SAFE,English,latin,,,,
+G003,"Tum bohat pagal aur kharab ho",INSULT,Roman Urdu,latin,,,,

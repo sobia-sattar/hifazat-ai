@@ -1,0 +1,12 @@
+{
+  "tests": {"passed": 18, "failed": 0, "command": ".venv/Scripts/python.exe -m pytest -q", "warning": "Starlette httpx integration deprecation"},
+  "lint": "passed: new src, tests, orchestration, report generator, API and adapter",
+  "editable_install": "passed",
+  "pip_check": "passed: no broken requirements",
+  "frontend_build": "passed; bundle size warning above 500 kB",
+  "api_integration": "passed: real artifact, four input language/script examples, CSV, invalid input and missing artifacts",
+  "browser_visual_check": "BLOCKED by browser admin-policy verification; not passed",
+  "pipeline": "Preparation and baseline training passed; master pipeline completed with --skip-prepare --reuse-trained, preserving frozen test predictions",
+  "transformer": "Tiny random BERT optimization smoke test passed; pretrained fine-tuning NOT COMPLETED",
+  "external_human_evaluation": "NOT COMPLETED"
+}

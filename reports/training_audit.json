@@ -1,0 +1,92 @@
+{
+  "dataset_sha256": "d845f0ceaf131d4b3a284b85912ff1a148a9c403e3748fef4c4aac934dc2d63f",
+  "splits": {
+    "train": 66813,
+    "test": 14318,
+    "validation": 14317
+  },
+  "exact_cross_split_overlap": {
+    "key": 0,
+    "processed_text": 0
+  },
+  "positive_training_support": {
+    "CYBERBULLYING": 0,
+    "HARASSMENT": 0,
+    "HATE_SPEECH": 969,
+    "THREAT": 0,
+    "INSULT": 0,
+    "TOXIC": 23190,
+    "SEXUAL_HARASSMENT": 0,
+    "OTHER_HARMFUL": 0
+  },
+  "limitations": "Exact checks do not rule out semantic/source leakage. No independent human gold evaluation. No positive coverage for six heads.",
+  "selection_rule": "Promote only if validation macro F1 improves and validation binary F1 does not decrease.",
+  "current_model": "hybrid_svm_0",
+  "current_parameters": {
+    "kind": "hybrid",
+    "algorithm": "svm",
+    "C": 0.25,
+    "balanced": true,
+    "max_features": 40000,
+    "ngram": 1,
+    "min_df": 2
+  },
+  "candidate_parameters": {
+    "kind": "hybrid",
+    "algorithm": "svm",
+    "C": 4.0,
+    "balanced": true,
+    "max_features": 60000,
+    "ngram": 2
+  },
+  "candidate_validation_macro_f1": 0.6608534288872113,
+  "candidate_validation_binary": {
+    "accuracy": 0.9415380317105538,
+    "precision": 0.9347643097643098,
+    "recall": 0.8939424431475146,
+    "f1": 0.9138977471453554,
+    "roc_auc": 0.9809033379653896,
+    "pr_auc": 0.9716389168793006,
+    "specificity": 0.9668378262729995,
+    "false_positive_rate": 0.03316217372700043,
+    "false_negative_rate": 0.10605755685248541,
+    "brier": 0.04881774467122995,
+    "confusion_matrix": [
+      [
+        9038,
+        310
+      ],
+      [
+        527,
+        4442
+      ]
+    ],
+    "n": 14317
+  },
+  "current_validation_macro_f1": 0.6754612984462359,
+  "current_validation_binary": {
+    "accuracy": 0.9365090451910316,
+    "precision": 0.906,
+    "recall": 0.911652243912256,
+    "f1": 0.9088173337345772,
+    "roc_auc": 0.9805553739991543,
+    "pr_auc": 0.9709265140161125,
+    "specificity": 0.9497218656397091,
+    "false_positive_rate": 0.05027813436029097,
+    "false_negative_rate": 0.088347756087744,
+    "brier": 0.04905313792291434,
+    "confusion_matrix": [
+      [
+        8878,
+        470
+      ],
+      [
+        439,
+        4530
+      ]
+    ],
+    "n": 14317
+  },
+  "promoted": false,
+  "candidate_artifact": "D:\\BullyDetector\\artifacts\\models\\20260831T181333866191Z.joblib"
+}

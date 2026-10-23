@@ -1,0 +1,12 @@
+{
+  "conflicting_exact_rows": 126,
+  "near_removed": 881,
+  "kept": 95448,
+  "method": "64-permutation MinHash candidates + exact 5-gram Jaccard",
+  "threshold": 0.85,
+  "limitation": "Probabilistic candidate recall; not a proof of no semantic duplicates.",
+  "input_rows": 97554,
+  "normalized_cross_split_duplicates": 0,
+  "external_evaluation": "NOT COMPLETED",
+  "split_mode": "iterative"
+}

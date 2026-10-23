@@ -1,0 +1,54 @@
+{
+  "datasets": [
+    {
+      "id": "davidson2017",
+      "name": "Hate Speech and Offensive Language (Davidson et al., 2017)",
+      "language": "English",
+      "license": "Public research release accompanying ICWSM 2017 paper; see GitHub repository.",
+      "url": "https://raw.githubusercontent.com/t-davidson/hate-speech-and-offensive-language/master/data/labeled_data.csv",
+      "filename": "davidson_labeled_data.csv",
+      "labels": "hate_speech / offensive_language / neither",
+      "path": "data\\raw\\davidson_labeled_data.csv",
+      "status": "downloaded",
+      "bytes": 2546446
+    },
+    {
+      "id": "adeeba2024_train",
+      "name": "Urdu Cyberbullying Corpus train (Adeeba, 2024)",
+      "language": "Urdu",
+      "license": "Public GitHub/Zenodo research corpus (Adeeba, 2024). Verify license in the source repository before redistribution.",
+      "url": "https://raw.githubusercontent.com/farahadeeba/cyberbullyingcorpus/main/train_bullying.xlsx",
+      "filename": "urdu_train_bullying.xlsx",
+      "labels": "as provided in source spreadsheet",
+      "path": "data\\raw\\urdu_train_bullying.xlsx",
+      "status": "downloaded",
+      "bytes": 671242
+    },
+    {
+      "id": "adeeba2024_test",
+      "name": "Urdu Cyberbullying Corpus test (Adeeba, 2024)",
+      "language": "Urdu",
+      "license": "Public GitHub/Zenodo research corpus (Adeeba, 2024). Verify license in the source repository before redistribution.",
+      "url": "https://raw.githubusercontent.com/farahadeeba/cyberbullyingcorpus/main/test_bullying.xlsx",
+      "filename": "urdu_test_bullying.xlsx",
+      "labels": "as provided in source spreadsheet",
+      "path": "data\\raw\\urdu_test_bullying.xlsx",
+      "status": "downloaded",
+      "bytes": 178311
+    },
+    {
+      "id": "roman_urdu_toxic_hf",
+      "name": "Roman-Urdu-Toxic-Corpus (Hugging Face, CC-BY-4.0)",
+      "language": "Roman Urdu",
+      "license": "CC-BY-4.0",
+      "url": "https://huggingface.co/datasets/hafiz-hassaan-saeed/Roman-Urdu-Toxic-Corpus/resolve/main/Roman_Urdu_Toxic_Corpus.csv",
+      "filename": "roman_urdu_toxic_corpus.csv",
+      "labels": "toxic / non-toxic as provided by the dataset card",
+      "optional": true,
+      "path": "data\\raw\\roman_urdu_toxic_corpus.csv",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found",
+      "bytes": 0
+    }
+  ]
+}

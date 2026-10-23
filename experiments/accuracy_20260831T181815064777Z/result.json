@@ -1,0 +1,107 @@
+{
+  "target_accuracy": 0.96,
+  "train_rows": 66813,
+  "validation_rows": 14317,
+  "selection": "Max validation accuracy with recall and F1 at least incumbent validation levels; no test tuning.",
+  "candidate": "Hybrid TF-IDF 100k features per branch, word bigrams, training-only log-count ratio, logistic regression C=1.",
+  "dataset_sha256": "d845f0ceaf131d4b3a284b85912ff1a148a9c403e3748fef4c4aac934dc2d63f",
+  "scope": "Binary harmful vs safe only; no new category supervision.",
+  "incumbent_validation": {
+    "accuracy": 0.9365090451910316,
+    "precision": 0.906,
+    "recall": 0.911652243912256,
+    "f1": 0.9088173337345772,
+    "roc_auc": 0.9805553739991543,
+    "pr_auc": 0.9709265140161125,
+    "specificity": 0.9497218656397091,
+    "false_positive_rate": 0.05027813436029097,
+    "false_negative_rate": 0.088347756087744,
+    "brier": 0.04905313792291434,
+    "confusion_matrix": [
+      [
+        8878,
+        470
+      ],
+      [
+        439,
+        4530
+      ]
+    ],
+    "n": 14317
+  },
+  "candidate_validation": {
+    "accuracy": 0.9529929454494657,
+    "precision": 0.9506924045321024,
+    "recall": 0.9118534916482189,
+    "f1": 0.9308680020544428,
+    "roc_auc": 0.9879346944638273,
+    "pr_auc": 0.9812107672335687,
+    "specificity": 0.9748609328198545,
+    "false_positive_rate": 0.025139067180145486,
+    "false_negative_rate": 0.08814650835178105,
+    "brier": 0.03891328169862517,
+    "confusion_matrix": [
+      [
+        9113,
+        235
+      ],
+      [
+        438,
+        4531
+      ]
+    ],
+    "n": 14317
+  },
+  "selected_threshold": 0.33999999999999997,
+  "unconstrained_validation": {
+    "accuracy": 0.9529929454494657,
+    "precision": 0.9506924045321024,
+    "recall": 0.9118534916482189,
+    "f1": 0.9308680020544428,
+    "roc_auc": 0.9879346944638273,
+    "pr_auc": 0.9812107672335687,
+    "specificity": 0.9748609328198545,
+    "false_positive_rate": 0.025139067180145486,
+    "false_negative_rate": 0.08814650835178105,
+    "brier": 0.03891328169862517,
+    "confusion_matrix": [
+      [
+        9113,
+        235
+      ],
+      [
+        438,
+        4531
+      ]
+    ],
+    "n": 14317
+  },
+  "unconstrained_threshold": 0.33999999999999997,
+  "target_met_on_validation": false,
+  "deployment": "Unchanged: research candidate, not installed into multi-category serving model.",
+  "test_evaluation": {
+    "accuracy": 0.9463612236345859,
+    "precision": 0.9400921658986175,
+    "recall": 0.9030181086519115,
+    "f1": 0.9211822660098522,
+    "roc_auc": 0.9868994239291116,
+    "pr_auc": 0.9796356633669921,
+    "specificity": 0.9694052203679931,
+    "false_positive_rate": 0.030594779632006845,
+    "false_negative_rate": 0.09698189134808853,
+    "brier": 0.04057486862702256,
+    "confusion_matrix": [
+      [
+        9062,
+        286
+      ],
+      [
+        482,
+        4488
+      ]
+    ],
+    "n": 14318
+  },
+  "evaluation_decision": "One frozen-threshold test evaluation after validation improved; target remains 96%, no test-based tuning.",
+  "candidate_artifact": "D:\\BullyDetector\\experiments\\accuracy_20260831T181815064777Z\\binary_candidate.joblib"
+}

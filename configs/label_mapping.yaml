@@ -1,0 +1,8 @@
+# Missing taxonomy labels are UNKNOWN (-1), not negative annotations.
+davidson2017:
+  '0': {HATE_SPEECH: 1, TOXIC: 1}
+  '1': {HATE_SPEECH: 0, TOXIC: 1}
+  '2': {SAFE: 1}
+roman_urdu_toxic:
+  '0': {SAFE: 1}
+  '1': {TOXIC: 1}

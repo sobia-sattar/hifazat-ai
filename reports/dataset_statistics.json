@@ -1,0 +1,40 @@
+{
+  "n": 95448,
+  "dataset_version": "d845f0ceaf131d4b3a284b85912ff1a148a9c403e3748fef4c4aac934dc2d63f",
+  "by_split": {
+    "train": 66813,
+    "test": 14318,
+    "validation": 14317
+  },
+  "by_language": {
+    "Roman_Urdu": 45786,
+    "English_Roman_Urdu": 29762,
+    "English": 14172,
+    "Unknown": 5728
+  },
+  "by_source": {
+    "roman_urdu_toxic": 71231,
+    "davidson2017": 24217
+  },
+  "positive_counts": {
+    "CYBERBULLYING": 0,
+    "HARASSMENT": 0,
+    "HATE_SPEECH": 1384,
+    "THREAT": 0,
+    "INSULT": 0,
+    "TOXIC": 33129,
+    "SEXUAL_HARASSMENT": 0,
+    "OTHER_HARMFUL": 0
+  },
+  "known_counts": {
+    "CYBERBULLYING": 62319,
+    "HARASSMENT": 62319,
+    "HATE_SPEECH": 82459,
+    "THREAT": 62319,
+    "INSULT": 62319,
+    "TOXIC": 95448,
+    "SEXUAL_HARASSMENT": 62319,
+    "OTHER_HARMFUL": 62319
+  },
+  "generated_at": "2026-08-31T16:45:04.173415+00:00"
+}

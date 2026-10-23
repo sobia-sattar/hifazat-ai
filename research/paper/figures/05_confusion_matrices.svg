@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="673.925514pt" height="296.39952pt" viewBox="0 0 673.925514 296.39952" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-31T23:39:19.109520</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 296.39952 
+L 673.925514 296.39952 
+L 673.925514 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 73.157891 256.197801 
+L 306.125754 256.197801 
+L 306.125754 23.229937 
+L 73.157891 23.229937 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p67a13421e4)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAUMAAAFDCAYAAACgM2wHAAAD0ElEQVR4nO3XoRECQRQFwTsUYREWHnMB4YkEicThEEcVQw4f0a1Wbq2Yers+X+99gUHb7e79GXeYvgDAPxBDADEEiGUIIIYAsQwBxBAgliGAGALEMgQQQ4BYhgBiCBDLEEAMAWIZAoghQCxDADEEiGUIIIYAsQwBxBAgliGAGALEMgQQQ4BYhgBiCBDLEEAMAWIZAoghQCxDADEEiGUIIIYAsQwBxBAgliGAGALEMgQQQ4BYhgBiCBDLEEAMAWIZAoghQCxDADEEiGUIIIYAsQwBxBAgliGAGALEMgQQQ4BYhgBiCBDLEEAMAWIZAoghQCxDADEEiGUIIIYAsQwBxBAgliGAGALEMgQQQ4BYhgBiCBDLEEAMAWIZAoghQCxDADEEiGUIIIYAsQwBxBAgliGAGALEMgQQQ4BYhgBiCBDLEEAMAWIZAoghQCxDADEEiGUIIIYAsQwBxBAgliGAGALEMgQQQ4BYhgBiCBDLEEAMAWIZAoghQCxDADEEiGUIIIYAsQwBxBAgliGAGALEMgQQQ4BYhgBiCBDLEEAMAWIZAoghQCxDADEEiGUIIIYAsQwBxBAgliGAGALEMgQQQ4BYhgBiCBDLEEAMAWIZAoghQCxDADEEiGUIIIYAsQwBxBAgliGAGALEMgQQQ4BYhgBiCBDLEEAMAWIZAoghQNbj6bL/zjDicT17ecb5JgOIIUAsQwAxBIhlCCCGALEMAcQQIJYhgBgCxDIEEEOAWIYAYggQyxBADAFiGQKIIUAsQwAxBIhlCCCGALEMAcQQIJYhgBgCxDIEEEOAWIYAYggQyxBADAFiGQKIIUAsQwAxBIhlCCCGALEMAcQQIJYhgBgCxDIEEEOAWIYAYggQyxBADAFiGQKIIUAsQwAxBIhlCCCGALEMAcQQIJYhgBgCxDIEEEOAWIYAYggQyxBADAFiGQKIIUAsQwAxBIhlCCCGALEMAcQQIJYhgBgCxDIEEEOAWIYAYggQyxBADAFiGQKIIUAsQwAxBIhlCCCGALEMAcQQIJYhgBgCxDIEEEOAWIYAYggQyxBADAFiGQKIIUAsQwAxBIhlCCCGALEMAcQQIJYhgBgCxDIEEEOAWIYAYggQyxBADAFiGQKIIUAsQwAxBIhlCCCGALEMAcQQIJYhgBgCxDIEEEOAWIYAYggQyxBADAFiGQKIIUAsQwAxBIhlCCCGALEMAcQQIJYhgBgCxDIEEEOAWIYAYggQyxBADAFiGQKIIUAsQwAxBIhlCCCGALEMAcQQIJYhgBgCxDIEEEOAWIYAYggQyxBADAGWrw+IBwxfOESWBQAAAABJRU5ErkJggg==" id="imagee7b6fc26a6" transform="scale(1 -1) translate(0 -232.56)" x="73.44" y="-23.51952" width="232.56" height="232.56"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m682f54361f" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m682f54361f" x="131.399857" y="256.197801" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="131.399857" y="271.556082" transform="rotate(-0 131.399857 271.556082)">Safe</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m682f54361f" x="247.883788" y="256.197801" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="247.883788" y="271.556082" transform="rotate(-0 247.883788 271.556082)">Harmful</text>
+     </g>
+    </g>
+    <g id="text_3">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263d50" x="189.641823" y="286.556942" transform="rotate(-0 189.641823 286.556942)">Predicted label</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_3">
+      <defs>
+       <path id="md7b4ce33f3" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#md7b4ce33f3" x="73.157891" y="81.471903" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="66.157891" y="85.651044" transform="rotate(-0 66.157891 85.651044)">Safe</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#md7b4ce33f3" x="73.157891" y="197.955835" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="66.157891" y="202.134976" transform="rotate(-0 66.157891 202.134976)">Harmful</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263d50" x="15.558281" y="139.713869" transform="rotate(-90 15.558281 139.713869)">Observed label</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 73.157891 256.197801 
+L 73.157891 23.229937 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 73.157891 256.197801 
+L 306.125754 256.197801 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="131.399857" y="85.628153" transform="rotate(-0 131.399857 85.628153)">8,874</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #173952" x="247.883788" y="85.628153" transform="rotate(-0 247.883788 85.628153)">474</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #173952" x="131.399857" y="202.112085" transform="rotate(-0 131.399857 202.112085)">465</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #173952" x="247.883788" y="202.112085" transform="rotate(-0 247.883788 202.112085)">4,505</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 13.2px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #173952" x="189.641823" y="17.229937" transform="rotate(-0 189.641823 17.229937)">Serving hybrid SVM</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 433.757651 256.197801 
+L 666.725514 256.197801 
+L 666.725514 23.229937 
+L 433.757651 23.229937 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p2dd84ce760)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAUQAAAFDCAYAAABC73d+AAAD5klEQVR4nO3WoRHCQBRF0Q2KnigNh6QmBI1QAAKHQyQiF5EK1pzj1u18cectn+9vHTDZ/fma/QUYJzcA2AkiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIIIgARxYiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQTIcr5c1/8DZnk/bo7PdBYiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiACCCHBkIQJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSACCJABBEggggQQQSIIAJEEAEiiAARRABBBDiyEAEiiAARRIAIIkAEESCCCBBBBIggAkQQASKIABFEgAgiQAQRIIIIEEEEiCACRBABIogAEUSAsdsAbncMawY1d6EAAAAASUVORK5CYII=" id="imageadec339671" transform="scale(1 -1) translate(0 -232.56)" x="433.44" y="-23.51952" width="233.28" height="232.56"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m682f54361f" x="491.999617" y="256.197801" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="491.999617" y="271.556082" transform="rotate(-0 491.999617 271.556082)">Safe</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m682f54361f" x="608.483548" y="256.197801" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="608.483548" y="271.556082" transform="rotate(-0 608.483548 271.556082)">Harmful</text>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263d50" x="550.241583" y="286.556942" transform="rotate(-0 550.241583 286.556942)">Predicted label</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#md7b4ce33f3" x="433.757651" y="81.471903" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="426.757651" y="85.651044" transform="rotate(-0 426.757651 85.651044)">Safe</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#md7b4ce33f3" x="433.757651" y="197.955835" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="426.757651" y="202.134976" transform="rotate(-0 426.757651 202.134976)">Harmful</text>
+     </g>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263d50" x="376.158041" y="139.713869" transform="rotate(-90 376.158041 139.713869)">Observed label</text>
+    </g>
+   </g>
+   <g id="patch_6">
+    <path d="M 433.757651 256.197801 
+L 433.757651 23.229937 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 433.757651 256.197801 
+L 666.725514 256.197801 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="491.999617" y="85.628153" transform="rotate(-0 491.999617 85.628153)">9,062</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #173952" x="608.483548" y="85.628153" transform="rotate(-0 608.483548 85.628153)">286</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #173952" x="491.999617" y="202.112085" transform="rotate(-0 491.999617 202.112085)">482</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #173952" x="608.483548" y="202.112085" transform="rotate(-0 608.483548 202.112085)">4,488</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 13.2px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #173952" x="550.241583" y="17.229937" transform="rotate(-0 550.241583 17.229937)">Binary research candidate</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p67a13421e4">
+   <rect x="73.157891" y="23.229937" width="232.967864" height="232.967864"/>
+  </clipPath>
+  <clipPath id="p2dd84ce760">
+   <rect x="433.757651" y="23.229937" width="232.967864" height="232.967864"/>
+  </clipPath>
+ </defs>
+</svg>

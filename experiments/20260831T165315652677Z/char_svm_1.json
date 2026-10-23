@@ -1,0 +1,153 @@
+{
+  "experiment_id": "20260831T165315652677Z_char_svm_1",
+  "timestamp": "2026-08-31T16:55:23.808463+00:00",
+  "model": "char_svm_1",
+  "features": "char",
+  "dataset_version": "d845f0ceaf131d4b3a284b85912ff1a148a9c403e3748fef4c4aac934dc2d63f",
+  "train_size": 66813,
+  "parameters": "{\"kind\": \"char\", \"algorithm\": \"svm\", \"C\": 0.25, \"balanced\": true, \"max_features\": 40000, \"ngram\": 2, \"min_df\": 2}",
+  "validation_macro_f1": 0.6626754776892652,
+  "validation_weighted_f1": 0.8797543571190749,
+  "binary_f1": 0.898626817447496,
+  "notes": "Partial-label supervision; validation-only thresholds; full training split",
+  "validation_metrics": {
+    "macro_f1": 0.6626754776892652,
+    "macro_precision": 0.6434681994330972,
+    "macro_recall": 0.6869066473002179,
+    "weighted_f1": 0.8797543571190749,
+    "micro_f1": 0.8775077160493827,
+    "hamming_loss": 0.015347988446711059,
+    "subset_accuracy": 0.94801026957638,
+    "fully_observed_rows": 9348,
+    "per_class": {
+      "CYBERBULLYING": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "HARASSMENT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "HATE_SPEECH": {
+        "known": 12342,
+        "support": 207,
+        "evaluable": true,
+        "precision": 0.3852140077821012,
+        "recall": 0.4782608695652174,
+        "f1": 0.4267241379310345,
+        "pr_auc": 0.333637835718453,
+        "roc_auc": 0.949876291081214,
+        "brier": 0.018086890818423546
+      },
+      "THREAT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "INSULT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "TOXIC": {
+        "known": 14317,
+        "support": 4969,
+        "evaluable": true,
+        "precision": 0.9017223910840932,
+        "recall": 0.8955524250352184,
+        "f1": 0.898626817447496,
+        "pr_auc": 0.9663498802262486,
+        "roc_auc": 0.9780871936601708,
+        "brier": 0.053569040779778226
+      },
+      "SEXUAL_HARASSMENT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "OTHER_HARMFUL": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      }
+    },
+    "n": 14317,
+    "selection_labels": [
+      "HATE_SPEECH",
+      "TOXIC"
+    ],
+    "note": "Macro metrics cover labels with positive and negative annotations; unknown cells excluded. Not comparable to historical nine-label Macro-F1."
+  },
+  "binary": {
+    "accuracy": 0.929873576866662,
+    "precision": 0.9017223910840932,
+    "recall": 0.8955524250352184,
+    "f1": 0.898626817447496,
+    "roc_auc": 0.9780871936601708,
+    "pr_auc": 0.9663498802262486,
+    "specificity": 0.9481172443303381,
+    "false_positive_rate": 0.05188275566966196,
+    "false_negative_rate": 0.10444757496478164,
+    "brier": 0.053569040779778226,
+    "confusion_matrix": [
+      [
+        8863,
+        485
+      ],
+      [
+        519,
+        4450
+      ]
+    ],
+    "n": 14317
+  },
+  "thresholds": [
+    1.01,
+    1.01,
+    0.5499999999999999,
+    1.01,
+    1.01,
+    0.475,
+    1.01,
+    1.01,
+    0.475
+  ]
+}

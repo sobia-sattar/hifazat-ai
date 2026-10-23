@@ -1,0 +1,718 @@
+{
+  "generated_at": "2026-08-23T17:41:15.125639+00:00",
+  "training_subsample": null,
+  "dataset": {
+    "n": 35959,
+    "by_split": {
+      "train": 25171,
+      "validation": 5394,
+      "test": 5394
+    },
+    "by_language": {
+      "English": 13325,
+      "English-Roman Urdu": 10240,
+      "Urdu": 9826,
+      "Mixed": 1409,
+      "Unknown": 774,
+      "Roman Urdu": 319,
+      "English-Urdu": 66
+    },
+    "by_source": {
+      "davidson2017": 24654,
+      "adeeba2024_train": 9176,
+      "adeeba2024_test": 2129
+    },
+    "class_counts": {
+      "SAFE": 11843,
+      "CYBERBULLYING": 3201,
+      "HARASSMENT": 1006,
+      "HATE_SPEECH": 1422,
+      "THREAT": 88,
+      "INSULT": 20546,
+      "TOXIC": 23343,
+      "SEXUAL_HARASSMENT": 0,
+      "OTHER_HARMFUL": 1142
+    },
+    "binary_harmful": 24116,
+    "binary_safe": 11843,
+    "duplicates": {
+      "input": 37167,
+      "exact_duplicates_removed": 1116,
+      "near_duplicates_removed": 88,
+      "kept": 35959
+    },
+    "seed": 42,
+    "note": "Demo comments are not included. Do not treat demo mode as research evidence."
+  },
+  "dataset_registry": {
+    "datasets": [
+      {
+        "id": "davidson2017",
+        "name": "Hate Speech and Offensive Language (Davidson et al., 2017)",
+        "language": "English",
+        "license": "Public research release accompanying ICWSM 2017 paper; see GitHub repository.",
+        "url": "https://raw.githubusercontent.com/t-davidson/hate-speech-and-offensive-language/master/data/labeled_data.csv",
+        "filename": "davidson_labeled_data.csv",
+        "labels": "hate_speech / offensive_language / neither",
+        "path": "data\\raw\\davidson_labeled_data.csv",
+        "status": "downloaded",
+        "bytes": 2546446
+      },
+      {
+        "id": "adeeba2024_train",
+        "name": "Urdu Cyberbullying Corpus train (Adeeba, 2024)",
+        "language": "Urdu",
+        "license": "Public GitHub/Zenodo research corpus (Adeeba, 2024). Verify license in the source repository before redistribution.",
+        "url": "https://raw.githubusercontent.com/farahadeeba/cyberbullyingcorpus/main/train_bullying.xlsx",
+        "filename": "urdu_train_bullying.xlsx",
+        "labels": "as provided in source spreadsheet",
+        "path": "data\\raw\\urdu_train_bullying.xlsx",
+        "status": "downloaded",
+        "bytes": 671242
+      },
+      {
+        "id": "adeeba2024_test",
+        "name": "Urdu Cyberbullying Corpus test (Adeeba, 2024)",
+        "language": "Urdu",
+        "license": "Public GitHub/Zenodo research corpus (Adeeba, 2024). Verify license in the source repository before redistribution.",
+        "url": "https://raw.githubusercontent.com/farahadeeba/cyberbullyingcorpus/main/test_bullying.xlsx",
+        "filename": "urdu_test_bullying.xlsx",
+        "labels": "as provided in source spreadsheet",
+        "path": "data\\raw\\urdu_test_bullying.xlsx",
+        "status": "downloaded",
+        "bytes": 178311
+      },
+      {
+        "id": "roman_urdu_toxic_hf",
+        "name": "Roman-Urdu-Toxic-Corpus (Hugging Face, CC-BY-4.0)",
+        "language": "Roman Urdu",
+        "license": "CC-BY-4.0",
+        "url": "https://huggingface.co/datasets/hafiz-hassaan-saeed/Roman-Urdu-Toxic-Corpus/resolve/main/Roman_Urdu_Toxic_Corpus.csv",
+        "filename": "roman_urdu_toxic_corpus.csv",
+        "labels": "toxic / non-toxic as provided by the dataset card",
+        "optional": true,
+        "path": "data\\raw\\roman_urdu_toxic_corpus.csv",
+        "status": "unavailable",
+        "error": "HTTP Error 404: Not Found",
+        "bytes": 0
+      }
+    ]
+  },
+  "model_comparison_validation": [
+    {
+      "model": "tfidf_logreg",
+      "validation_macro_f1": 0.5710660699846535,
+      "accuracy": 0.8626251390433816,
+      "precision": 0.8470446320868517,
+      "recall": 0.9704256495301271,
+      "weighted_f1": 0.858039160483772
+    },
+    {
+      "model": "tfidf_linear_svm",
+      "validation_macro_f1": 0.5987539530284155,
+      "accuracy": 0.9104560622914349,
+      "precision": 0.9324137931034483,
+      "recall": 0.9342177998894416,
+      "weighted_f1": 0.8693226723780986
+    },
+    {
+      "model": "char_ngram_svm",
+      "validation_macro_f1": 0.5781578633042015,
+      "accuracy": 0.9117538005190953,
+      "precision": 0.9383370535714286,
+      "recall": 0.9295190713101161,
+      "weighted_f1": 0.8699947499957099
+    },
+    {
+      "model": "hybrid_word_char_logreg",
+      "validation_macro_f1": 0.5905063580515341,
+      "accuracy": 0.885613644790508,
+      "precision": 0.8748438670996752,
+      "recall": 0.9679380873410725,
+      "weighted_f1": 0.8703683873735671
+    }
+  ],
+  "selected_serving_model": "tfidf_linear_svm",
+  "test": {
+    "accuracy": 0.9150908416759362,
+    "precision": 0.9388719088635732,
+    "recall": 0.9341996129388996,
+    "macro_f1": 0.5980911964816494,
+    "weighted_f1": 0.8720180850058143,
+    "binary_harmful_f1": 0.936529933481153,
+    "per_class": {
+      "SAFE": {
+        "precision": 0.8542005420054201,
+        "recall": 0.8868880135059088,
+        "f1": 0.8702374378796245,
+        "support": 1777
+      },
+      "CYBERBULLYING": {
+        "precision": 0.8076923076923077,
+        "recall": 0.6402439024390244,
+        "f1": 0.7142857142857143,
+        "support": 492
+      },
+      "HARASSMENT": {
+        "precision": 0.7721518987341772,
+        "recall": 0.4178082191780822,
+        "f1": 0.5422222222222223,
+        "support": 146
+      },
+      "HATE_SPEECH": {
+        "precision": 0.6862745098039216,
+        "recall": 0.15086206896551724,
+        "f1": 0.24734982332155478,
+        "support": 232
+      },
+      "THREAT": {
+        "precision": 0.8,
+        "recall": 0.36363636363636365,
+        "f1": 0.5,
+        "support": 11
+      },
+      "INSULT": {
+        "precision": 0.9127248500999334,
+        "recall": 0.8954248366013072,
+        "f1": 0.9039920818211812,
+        "support": 3060
+      },
+      "TOXIC": {
+        "precision": 0.9476778365667254,
+        "recall": 0.9200913242009132,
+        "f1": 0.9336808572256009,
+        "support": 3504
+      },
+      "SEXUAL_HARASSMENT": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "OTHER_HARMFUL": {
+        "precision": 0.816,
+        "recall": 0.5698324022346368,
+        "f1": 0.6710526315789473,
+        "support": 179
+      }
+    },
+    "confusion_matrix_harmful": {
+      "tn": 1557,
+      "fp": 220,
+      "fn": 238,
+      "tp": 3379
+    },
+    "false_positives": 220,
+    "false_negatives": 238,
+    "false_positive_rate": 0.12380416432189083,
+    "false_negative_rate": 0.06580038706110036,
+    "n": 5394,
+    "note": "Accuracy is binary harmful vs safe. Macro-F1 is multi-label over all taxonomy labels."
+  },
+  "per_language_test": {
+    "English": {
+      "available": true,
+      "accuracy": 0.9452124935995904,
+      "precision": 0.9594594594594594,
+      "recall": 0.9772591262716936,
+      "macro_f1": 0.3302262924175364,
+      "weighted_f1": 0.9213361282457015,
+      "binary_harmful_f1": 0.9682774977764601,
+      "per_class": {
+        "SAFE": {
+          "precision": 0.8446969696969697,
+          "recall": 0.7907801418439716,
+          "f1": 0.8168498168498168,
+          "support": 282
+        },
+        "CYBERBULLYING": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "HARASSMENT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "HATE_SPEECH": {
+          "precision": 0.6666666666666666,
+          "recall": 0.15,
+          "f1": 0.24489795918367346,
+          "support": 120
+        },
+        "THREAT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "INSULT": {
+          "precision": 0.9225526641883519,
+          "recall": 0.9600257898130239,
+          "f1": 0.9409162717219589,
+          "support": 1551
+        },
+        "TOXIC": {
+          "precision": 0.9633569739952719,
+          "recall": 0.9754637941352483,
+          "f1": 0.9693725840023788,
+          "support": 1671
+        },
+        "SEXUAL_HARASSMENT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "OTHER_HARMFUL": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        }
+      },
+      "confusion_matrix_harmful": {
+        "tn": 213,
+        "fp": 69,
+        "fn": 38,
+        "tp": 1633
+      },
+      "false_positives": 69,
+      "false_negatives": 38,
+      "false_positive_rate": 0.24468085106382978,
+      "false_negative_rate": 0.022740873728306403,
+      "n": 1953,
+      "note": "Accuracy is binary harmful vs safe. Macro-F1 is multi-label over all taxonomy labels."
+    },
+    "Urdu": {
+      "available": true,
+      "accuracy": 0.8575197889182058,
+      "precision": 0.8413793103448276,
+      "recall": 0.7134502923976608,
+      "macro_f1": 0.4821263922797984,
+      "weighted_f1": 0.7335944686442032,
+      "binary_harmful_f1": 0.7721518987341772,
+      "per_class": {
+        "SAFE": {
+          "precision": 0.8461538461538461,
+          "recall": 0.9322033898305084,
+          "f1": 0.8870967741935484,
+          "support": 1003
+        },
+        "CYBERBULLYING": {
+          "precision": 0.8072625698324022,
+          "recall": 0.647982062780269,
+          "f1": 0.7189054726368159,
+          "support": 446
+        },
+        "HARASSMENT": {
+          "precision": 0.8,
+          "recall": 0.4444444444444444,
+          "f1": 0.5714285714285714,
+          "support": 135
+        },
+        "HATE_SPEECH": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "THREAT": {
+          "precision": 0.8,
+          "recall": 0.36363636363636365,
+          "f1": 0.5,
+          "support": 11
+        },
+        "INSULT": {
+          "precision": 0.8235294117647058,
+          "recall": 0.20095693779904306,
+          "f1": 0.3230769230769231,
+          "support": 209
+        },
+        "TOXIC": {
+          "precision": 0.8357664233576643,
+          "recall": 0.5585365853658537,
+          "f1": 0.6695906432748538,
+          "support": 410
+        },
+        "SEXUAL_HARASSMENT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "OTHER_HARMFUL": {
+          "precision": 0.8392857142857143,
+          "recall": 0.5562130177514792,
+          "f1": 0.6690391459074733,
+          "support": 169
+        }
+      },
+      "confusion_matrix_harmful": {
+        "tn": 934,
+        "fp": 69,
+        "fn": 147,
+        "tp": 366
+      },
+      "false_positives": 69,
+      "false_negatives": 147,
+      "false_positive_rate": 0.06879361914257229,
+      "false_negative_rate": 0.28654970760233917,
+      "n": 1516,
+      "note": "Accuracy is binary harmful vs safe. Macro-F1 is multi-label over all taxonomy labels."
+    },
+    "Roman Urdu": {
+      "available": true,
+      "accuracy": 0.9245283018867925,
+      "precision": 0.9512195121951219,
+      "recall": 0.9512195121951219,
+      "macro_f1": 0.37541730489768665,
+      "weighted_f1": 0.9147394387912429,
+      "binary_harmful_f1": 0.9512195121951219,
+      "per_class": {
+        "SAFE": {
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "f1": 0.8333333333333334,
+          "support": 12
+        },
+        "CYBERBULLYING": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "HARASSMENT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "HATE_SPEECH": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        },
+        "THREAT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "INSULT": {
+          "precision": 1.0,
+          "recall": 0.8648648648648649,
+          "f1": 0.927536231884058,
+          "support": 37
+        },
+        "TOXIC": {
+          "precision": 0.9512195121951219,
+          "recall": 0.9512195121951219,
+          "f1": 0.9512195121951219,
+          "support": 41
+        },
+        "SEXUAL_HARASSMENT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "OTHER_HARMFUL": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        }
+      },
+      "confusion_matrix_harmful": {
+        "tn": 10,
+        "fp": 2,
+        "fn": 2,
+        "tp": 39
+      },
+      "false_positives": 2,
+      "false_negatives": 2,
+      "false_positive_rate": 0.16666666666666666,
+      "false_negative_rate": 0.04878048780487805,
+      "n": 53,
+      "note": "Accuracy is binary harmful vs safe. Macro-F1 is multi-label over all taxonomy labels."
+    },
+    "Code-mixed": {
+      "available": true,
+      "accuracy": 0.9315068493150684,
+      "precision": 0.943904263275991,
+      "recall": 0.9655700076511095,
+      "macro_f1": 0.48793554960629987,
+      "weighted_f1": 0.8969988526322292,
+      "binary_harmful_f1": 0.9546142208774584,
+      "per_class": {
+        "SAFE": {
+          "precision": 0.883177570093458,
+          "recall": 0.849438202247191,
+          "f1": 0.865979381443299,
+          "support": 445
+        },
+        "CYBERBULLYING": {
+          "precision": 0.8125,
+          "recall": 0.5652173913043478,
+          "f1": 0.6666666666666666,
+          "support": 46
+        },
+        "HARASSMENT": {
+          "precision": 0.25,
+          "recall": 0.09090909090909091,
+          "f1": 0.13333333333333333,
+          "support": 11
+        },
+        "HATE_SPEECH": {
+          "precision": 0.7272727272727273,
+          "recall": 0.08602150537634409,
+          "f1": 0.15384615384615385,
+          "support": 93
+        },
+        "THREAT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "INSULT": {
+          "precision": 0.9043760129659644,
+          "recall": 0.9354568315171836,
+          "f1": 0.9196538936959209,
+          "support": 1193
+        },
+        "TOXIC": {
+          "precision": 0.9511823035850496,
+          "recall": 0.961449498843485,
+          "f1": 0.9562883435582822,
+          "support": 1297
+        },
+        "SEXUAL_HARASSMENT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "OTHER_HARMFUL": {
+          "precision": 0.6153846153846154,
+          "recall": 0.8,
+          "f1": 0.6956521739130435,
+          "support": 10
+        }
+      },
+      "confusion_matrix_harmful": {
+        "tn": 370,
+        "fp": 75,
+        "fn": 45,
+        "tp": 1262
+      },
+      "false_positives": 75,
+      "false_negatives": 45,
+      "false_positive_rate": 0.16853932584269662,
+      "false_negative_rate": 0.03442999234889059,
+      "n": 1752,
+      "note": "Accuracy is binary harmful vs safe. Macro-F1 is multi-label over all taxonomy labels."
+    }
+  },
+  "fairness_test": {
+    "English": {
+      "precision": 0.9594594594594594,
+      "recall": 0.9772591262716936,
+      "f1": 0.9682774977764601,
+      "false_positive_rate": 0.24468085106382978,
+      "false_negative_rate": 0.022740873728306403,
+      "n": 1953
+    },
+    "Urdu": {
+      "precision": 0.8413793103448276,
+      "recall": 0.7134502923976608,
+      "f1": 0.7721518987341772,
+      "false_positive_rate": 0.06879361914257229,
+      "false_negative_rate": 0.28654970760233917,
+      "n": 1516
+    },
+    "Roman Urdu": {
+      "precision": 0.9512195121951219,
+      "recall": 0.9512195121951219,
+      "f1": 0.9512195121951219,
+      "false_positive_rate": 0.16666666666666666,
+      "false_negative_rate": 0.04878048780487805,
+      "n": 53
+    },
+    "Code-mixed": {
+      "precision": 0.943904263275991,
+      "recall": 0.9655700076511095,
+      "f1": 0.9546142208774584,
+      "false_positive_rate": 0.16853932584269662,
+      "false_negative_rate": 0.03442999234889059,
+      "n": 1752
+    },
+    "gap_max_minus_min_f1": 0.19612559904228288,
+    "note": "Gaps are measured differences. This does not imply the model is unbiased."
+  },
+  "ablation_validation": {
+    "baseline_tfidf_logreg_no_norm": {
+      "accuracy": 0.8609566184649611,
+      "precision": 0.845708775313404,
+      "recall": 0.9695964621337756,
+      "macro_f1": 0.5725517383509783,
+      "weighted_f1": 0.8580072269148861,
+      "binary_harmful_f1": 0.9034251867113057,
+      "confusion_matrix_harmful": {
+        "tn": 1136,
+        "fp": 640,
+        "fn": 110,
+        "tp": 3508
+      },
+      "false_positives": 640,
+      "false_negatives": 110,
+      "false_positive_rate": 0.36036036036036034,
+      "false_negative_rate": 0.030403537866224434,
+      "n": 5394,
+      "note": "Accuracy is binary harmful vs safe. Macro-F1 is multi-label over all taxonomy labels."
+    },
+    "tfidf_logreg_with_norm": {
+      "accuracy": 0.8626251390433816,
+      "precision": 0.8470446320868517,
+      "recall": 0.9704256495301271,
+      "macro_f1": 0.5710660699846535,
+      "weighted_f1": 0.858039160483772,
+      "binary_harmful_f1": 0.9045472111297179,
+      "confusion_matrix_harmful": {
+        "tn": 1142,
+        "fp": 634,
+        "fn": 107,
+        "tp": 3511
+      },
+      "false_positives": 634,
+      "false_negatives": 107,
+      "false_positive_rate": 0.356981981981982,
+      "false_negative_rate": 0.02957435046987286,
+      "n": 5394,
+      "note": "Accuracy is binary harmful vs safe. Macro-F1 is multi-label over all taxonomy labels."
+    },
+    "tfidf_logreg_norm_plus_codemix": {
+      "accuracy": 0.8542825361512792,
+      "precision": 0.8355450236966825,
+      "recall": 0.974571586511885,
+      "macro_f1": 0.5660634808221967,
+      "weighted_f1": 0.8559726649065844,
+      "binary_harmful_f1": 0.8997193161520796,
+      "confusion_matrix_harmful": {
+        "tn": 1082,
+        "fp": 694,
+        "fn": 92,
+        "tp": 3526
+      },
+      "false_positives": 694,
+      "false_negatives": 92,
+      "false_positive_rate": 0.39076576576576577,
+      "false_negative_rate": 0.02542841348811498,
+      "n": 5394,
+      "note": "Accuracy is binary harmful vs safe. Macro-F1 is multi-label over all taxonomy labels."
+    },
+    "best_sklearn_on_validation": {
+      "name": "tfidf_linear_svm",
+      "accuracy": 0.9104560622914349,
+      "precision": 0.9324137931034483,
+      "recall": 0.9342177998894416,
+      "macro_f1": 0.5987539530284155,
+      "weighted_f1": 0.8693226723780986,
+      "binary_harmful_f1": 0.9333149247549358,
+      "confusion_matrix_harmful": {
+        "tn": 1531,
+        "fp": 245,
+        "fn": 238,
+        "tp": 3380
+      },
+      "false_positives": 245,
+      "false_negatives": 238,
+      "false_positive_rate": 0.13795045045045046,
+      "false_negative_rate": 0.06578220011055833,
+      "n": 5394,
+      "note": "Accuracy is binary harmful vs safe. Macro-F1 is multi-label over all taxonomy labels."
+    },
+    "transformer_on_validation": {
+      "available": false,
+      "message": "Requires training",
+      "reason": "XLM-RoBERTa fine-tuning is implemented in research/train.py. Set BULLYLENS_TRAIN_TRANSFORMER=1 after installing torch and transformers."
+    },
+    "note": "Ablations report validation metrics only. The test set was evaluated once for the selected sklearn model."
+  },
+  "calibration_test": {
+    "curve": [
+      {
+        "mean_predicted": 0.055465542221322155,
+        "fraction_positive": 0.047976011994003
+      },
+      {
+        "mean_predicted": 0.14651088220405892,
+        "fraction_positive": 0.09619686800894854
+      },
+      {
+        "mean_predicted": 0.2432111864631497,
+        "fraction_positive": 0.16967509025270758
+      },
+      {
+        "mean_predicted": 0.350699755302777,
+        "fraction_positive": 0.25961538461538464
+      },
+      {
+        "mean_predicted": 0.45176998867356816,
+        "fraction_positive": 0.3163265306122449
+      },
+      {
+        "mean_predicted": 0.5503018674294553,
+        "fraction_positive": 0.543046357615894
+      },
+      {
+        "mean_predicted": 0.6463817510433145,
+        "fraction_positive": 0.58125
+      },
+      {
+        "mean_predicted": 0.7568761195089819,
+        "fraction_positive": 0.7391304347826086
+      },
+      {
+        "mean_predicted": 0.8570725215542434,
+        "fraction_positive": 0.8976744186046511
+      },
+      {
+        "mean_predicted": 0.9848669917630859,
+        "fraction_positive": 0.9911413969335605
+      }
+    ],
+    "mean_confidence_correct": 0.7045986052017613,
+    "mean_confidence_incorrect": 0.4787552638953533,
+    "n_correct": 4936,
+    "n_incorrect": 458
+  },
+  "error_analysis_test": {
+    "counts": {
+      "false_positive": 220,
+      "false_negative": 238,
+      "low_confidence": 134,
+      "roman_urdu": 53,
+      "urdu": 1516,
+      "code_mixing": 1752,
+      "negation": 549,
+      "sarcasm_candidate": 221,
+      "slang": 148,
+      "context_dependent_candidate": 450
+    },
+    "note": "Sarcasm/slang/context tags are heuristic flags for research inspection, not gold labels.",
+    "example_count": 200
+  },
+  "confusion_matrix_test": {
+    "tn": 1557,
+    "fp": 220,
+    "fn": 238,
+    "tp": 3379
+  },
+  "limitations": "Results are not 100% accurate. Roman Urdu spelling, sarcasm, code-mixing, and context remain error sources. Demo mode data is excluded from these metrics."
+}

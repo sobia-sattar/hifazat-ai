@@ -1,0 +1,35 @@
+seed: 42
+fractions: [0.70, 0.15, 0.15]
+near_duplicate_jaccard: 0.85
+lsh_candidate_threshold: 0.65
+sources:
+  - id: davidson2017
+    path: data/raw/davidson_labeled_data.csv
+    text_column: tweet
+    download_url: https://raw.githubusercontent.com/t-davidson/hate-speech-and-offensive-language/master/data/labeled_data.csv
+    label_column: class
+    source: https://github.com/t-davidson/hate-speech-and-offensive-language
+    license: MIT
+    license_evidence: https://github.com/t-davidson/hate-speech-and-offensive-language/blob/master/LICENSE
+    citation: Davidson et al. (2017), Automated Hate Speech Detection and the Problem of Offensive Language, ICWSM.
+    language: English
+    approved: true
+  - id: roman_urdu_toxic
+    date_acquired: '2026-08-31'
+    path: data/raw/roman_urdu_toxic.parquet
+    text_column: Roman_Urdu
+    download_url: https://huggingface.co/datasets/hafiz-hassaan-saeed/Roman-Urdu-Toxic-Corpus/resolve/main/RUT.parquet
+    label_column: Toxic
+    source: https://huggingface.co/datasets/hafiz-hassaan-saeed/Roman-Urdu-Toxic-Corpus
+    license: CC-BY-4.0
+    license_evidence: https://huggingface.co/datasets/hafiz-hassaan-saeed/Roman-Urdu-Toxic-Corpus
+    citation: hafiz-hassaan-saeed, Roman-Urdu-Toxic-Corpus, Hugging Face dataset, accessed 2026-08-31.
+    language: Roman_Urdu
+    approved: true
+  - id: adeeba2024
+    path: data/raw/urdu_train_bullying.xlsx
+    source: https://github.com/farahadeeba/cyberbullyingcorpus
+    license: UNVERIFIED
+    citation: farahadeeba/cyberbullyingcorpus
+    language: Urdu
+    approved: false

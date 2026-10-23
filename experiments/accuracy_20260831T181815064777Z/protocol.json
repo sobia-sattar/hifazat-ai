@@ -1,0 +1,9 @@
+{
+  "target_accuracy": 0.96,
+  "train_rows": 66813,
+  "validation_rows": 14317,
+  "selection": "Max validation accuracy with recall and F1 at least incumbent validation levels; no test tuning.",
+  "candidate": "Hybrid TF-IDF 100k features per branch, word bigrams, training-only log-count ratio, logistic regression C=1.",
+  "dataset_sha256": "d845f0ceaf131d4b3a284b85912ff1a148a9c403e3748fef4c4aac934dc2d63f",
+  "scope": "Binary harmful vs safe only; no new category supervision."
+}

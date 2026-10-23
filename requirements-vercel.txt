@@ -1,0 +1,17 @@
+fastapi>=0.115.12
+sqlalchemy>=2.0.40
+pydantic>=2.11.3
+pydantic-settings>=2.8.1
+python-dotenv>=1.1.0
+httpx>=0.28.1
+numpy>=2.3.3
+pandas>=3.0.5
+scikit-learn>=1.7.2
+scipy>=1.16.2
+joblib>=1.4.2
+python-multipart>=0.0.20
+reportlab>=4.4.0
+openpyxl>=3.1.5
+rapidfuzz>=3.13.0
+regex>=2024.11.6
+psycopg[binary]>=3.2

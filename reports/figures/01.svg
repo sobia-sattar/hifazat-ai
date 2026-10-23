@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="432pt" viewBox="0 0 720 432" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-31T22:10:06.777083</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 432 
+L 720 432 
+L 720 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <g id="patch_2">
+     <path d="M 234.330469 78.424523 
+L 485.669531 78.424523 
+Q 491.669531 78.424523 491.669531 72.424523 
+L 491.669531 62.423742 
+Q 491.669531 56.423742 485.669531 56.423742 
+L 234.330469 56.423742 
+Q 228.330469 56.423742 228.330469 62.423742 
+L 228.330469 72.424523 
+Q 228.330469 78.424523 234.330469 78.424523 
+z
+" style="fill: #e5eff8; stroke: #285f87; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="360" y="70.022179" transform="rotate(-0 360 70.022179)">Licensed sources → normalization + deduplication</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 360 89.969443 
+Q 360 100.295683 360 109.50389 
+" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+    <path d="M 362 105.50389 
+L 360 109.50389 
+L 358 105.50389 
+" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+   </g>
+   <g id="text_2">
+    <g id="patch_4">
+     <path d="M 286.836719 156.491988 
+L 433.163281 156.491988 
+Q 439.163281 156.491988 439.163281 150.491988 
+L 439.163281 140.491207 
+Q 439.163281 134.491207 433.163281 134.491207 
+L 286.836719 134.491207 
+Q 280.836719 134.491207 280.836719 140.491207 
+L 280.836719 150.491988 
+Q 280.836719 156.491988 286.836719 156.491988 
+z
+" style="fill: #e5eff8; stroke: #285f87; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="360" y="148.089644" transform="rotate(-0 360 148.089644)">Train / validation / frozen test</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 360 168.036908 
+Q 360 178.363148 360 187.571355 
+" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+    <path d="M 362 183.571355 
+L 360 187.571355 
+L 358 183.571355 
+" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <g id="patch_6">
+     <path d="M 238.705469 234.559453 
+L 481.294531 234.559453 
+Q 487.294531 234.559453 487.294531 228.559453 
+L 487.294531 218.558672 
+Q 487.294531 212.558672 481.294531 212.558672 
+L 238.705469 212.558672 
+Q 232.705469 212.558672 232.705469 218.558672 
+L 232.705469 228.559453 
+Q 232.705469 234.559453 238.705469 234.559453 
+z
+" style="fill: #e5eff8; stroke: #285f87; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="360" y="226.157109" transform="rotate(-0 360 226.157109)">Sparse heads / optional multilingual transformer</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 360 246.104373 
+Q 360 256.430614 360 265.63882 
+" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+    <path d="M 362 261.63882 
+L 360 265.63882 
+L 358 261.63882 
+" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <g id="patch_8">
+     <path d="M 260.371875 312.626918 
+L 459.628125 312.626918 
+Q 465.628125 312.626918 465.628125 306.626918 
+L 465.628125 296.626137 
+Q 465.628125 290.626137 459.628125 290.626137 
+L 260.371875 290.626137 
+Q 254.371875 290.626137 254.371875 296.626137 
+L 254.371875 306.626918 
+Q 254.371875 312.626918 260.371875 312.626918 
+z
+" style="fill: #e5eff8; stroke: #285f87; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="360" y="304.224574" transform="rotate(-0 360 304.224574)">Frozen artifacts → FastAPI → research UI</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="360" y="12.118365" transform="rotate(-0 360 12.118365)">System architecture</text>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,250 @@
+{
+  "model_name": "hybrid_svm_0",
+  "version": "20260831T165315652677Z",
+  "dataset_version": "d845f0ceaf131d4b3a284b85912ff1a148a9c403e3748fef4c4aac934dc2d63f",
+  "validation": {
+    "macro_f1": 0.6754612984462359,
+    "macro_precision": 0.6488955223880597,
+    "macro_recall": 0.709449310361925,
+    "weighted_f1": 0.8901524576508497,
+    "micro_f1": 0.8875909613175029,
+    "hamming_loss": 0.014187825540502979,
+    "subset_accuracy": 0.9495079161317929,
+    "fully_observed_rows": 9348,
+    "per_class": {
+      "CYBERBULLYING": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "HARASSMENT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "HATE_SPEECH": {
+        "known": 12342,
+        "support": 207,
+        "evaluable": true,
+        "precision": 0.3917910447761194,
+        "recall": 0.5072463768115942,
+        "f1": 0.4421052631578947,
+        "pr_auc": 0.3699708285730453,
+        "roc_auc": 0.9500622027950453,
+        "brier": 0.016360693225109628
+      },
+      "THREAT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "INSULT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "TOXIC": {
+        "known": 14317,
+        "support": 4969,
+        "evaluable": true,
+        "precision": 0.906,
+        "recall": 0.911652243912256,
+        "f1": 0.9088173337345772,
+        "pr_auc": 0.9709265140161125,
+        "roc_auc": 0.9805553739991543,
+        "brier": 0.04905313792291434
+      },
+      "SEXUAL_HARASSMENT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "OTHER_HARMFUL": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      }
+    },
+    "n": 14317,
+    "selection_labels": [
+      "HATE_SPEECH",
+      "TOXIC"
+    ],
+    "note": "Macro metrics cover labels with positive and negative annotations; unknown cells excluded. Not comparable to historical nine-label Macro-F1."
+  },
+  "test": {
+    "macro_f1": 0.6383562025706101,
+    "macro_precision": 0.6086500803374171,
+    "macro_recall": 0.6815847005107568,
+    "weighted_f1": 0.8841468165414956,
+    "micro_f1": 0.8794570308765892,
+    "hamming_loss": 0.015222298675744516,
+    "subset_accuracy": 0.9485451433461703,
+    "fully_observed_rows": 9348,
+    "per_class": {
+      "CYBERBULLYING": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "HARASSMENT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "HATE_SPEECH": {
+        "known": 12433,
+        "support": 208,
+        "evaluable": true,
+        "precision": 0.3125,
+        "recall": 0.4567307692307692,
+        "f1": 0.37109375,
+        "pr_auc": 0.3116918408642364,
+        "roc_auc": 0.9479561900267421,
+        "brier": 0.01794526587365727
+      },
+      "THREAT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "INSULT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "TOXIC": {
+        "known": 14318,
+        "support": 4970,
+        "evaluable": true,
+        "precision": 0.9048001606748343,
+        "recall": 0.9064386317907445,
+        "f1": 0.9056186551412202,
+        "pr_auc": 0.9696016460136568,
+        "roc_auc": 0.9805674440308948,
+        "brier": 0.0497802886407604
+      },
+      "SEXUAL_HARASSMENT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "OTHER_HARMFUL": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      }
+    },
+    "n": 14318,
+    "selection_labels": [
+      "HATE_SPEECH",
+      "TOXIC"
+    ],
+    "note": "Macro metrics cover labels with positive and negative annotations; unknown cells excluded. Not comparable to historical nine-label Macro-F1."
+  },
+  "binary": {
+    "accuracy": 0.9344182148344741,
+    "precision": 0.9048001606748343,
+    "recall": 0.9064386317907445,
+    "f1": 0.9056186551412202,
+    "roc_auc": 0.9805674440308948,
+    "pr_auc": 0.9696016460136568,
+    "specificity": 0.9492939666238768,
+    "false_positive_rate": 0.050706033376123234,
+    "false_negative_rate": 0.09356136820925554,
+    "brier": 0.0497802886407604,
+    "confusion_matrix": [
+      [
+        8874,
+        474
+      ],
+      [
+        465,
+        4505
+      ]
+    ],
+    "n": 14318
+  },
+  "confidence_interval": {
+    "metric": "observed-label macro_f1",
+    "resamples": 200,
+    "seed": 42,
+    "lower": 0.612934716756241,
+    "upper": 0.6612657432203102,
+    "note": "Row bootstrap conditional on the fitted model and this split; not a significance test."
+  },
+  "external_evaluation": "NOT COMPLETED",
+  "transformer": "NOT TRAINED in this baseline run"
+}

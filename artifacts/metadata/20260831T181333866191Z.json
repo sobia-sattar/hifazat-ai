@@ -1,0 +1,168 @@
+{
+  "model_name": "hybrid_svm_audit_60k_C4",
+  "labels": [
+    "CYBERBULLYING",
+    "HARASSMENT",
+    "HATE_SPEECH",
+    "THREAT",
+    "INSULT",
+    "TOXIC",
+    "SEXUAL_HARASSMENT",
+    "OTHER_HARMFUL"
+  ],
+  "thresholds": [
+    1.01,
+    1.01,
+    0.35,
+    1.01,
+    1.01,
+    0.49999999999999994,
+    1.01,
+    1.01,
+    0.49999999999999994
+  ],
+  "version": "20260831T181333866191Z",
+  "validation_metrics": {
+    "macro_f1": 0.6608534288872113,
+    "macro_precision": 0.6524215249608951,
+    "macro_recall": 0.6740243616703756,
+    "weighted_f1": 0.8936581127251715,
+    "micro_f1": 0.8909840895698291,
+    "hamming_loss": 0.013414383603030926,
+    "subset_accuracy": 0.9656611039794608,
+    "fully_observed_rows": 9348,
+    "per_class": {
+      "CYBERBULLYING": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "HARASSMENT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "HATE_SPEECH": {
+        "known": 12342,
+        "support": 207,
+        "evaluable": true,
+        "precision": 0.3700787401574803,
+        "recall": 0.45410628019323673,
+        "f1": 0.4078091106290672,
+        "pr_auc": 0.33880876853784325,
+        "roc_auc": 0.9318161822810611,
+        "brier": 0.014510591637500783
+      },
+      "THREAT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "INSULT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "TOXIC": {
+        "known": 14317,
+        "support": 4969,
+        "evaluable": true,
+        "precision": 0.9347643097643098,
+        "recall": 0.8939424431475146,
+        "f1": 0.9138977471453554,
+        "pr_auc": 0.9716389168793006,
+        "roc_auc": 0.9809033379653896,
+        "brier": 0.04881774467122995
+      },
+      "SEXUAL_HARASSMENT": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      },
+      "OTHER_HARMFUL": {
+        "known": 9348,
+        "support": 0,
+        "evaluable": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc": null,
+        "roc_auc": null,
+        "brier": 0.0
+      }
+    },
+    "n": 14317,
+    "selection_labels": [
+      "HATE_SPEECH",
+      "TOXIC"
+    ],
+    "note": "Macro metrics cover labels with positive and negative annotations; unknown cells excluded. Not comparable to historical nine-label Macro-F1."
+  },
+  "validation_binary": {
+    "accuracy": 0.9415380317105538,
+    "precision": 0.9347643097643098,
+    "recall": 0.8939424431475146,
+    "f1": 0.9138977471453554,
+    "roc_auc": 0.9809033379653896,
+    "pr_auc": 0.9716389168793006,
+    "specificity": 0.9668378262729995,
+    "false_positive_rate": 0.03316217372700043,
+    "false_negative_rate": 0.10605755685248541,
+    "brier": 0.04881774467122995,
+    "confusion_matrix": [
+      [
+        9038,
+        310
+      ],
+      [
+        527,
+        4442
+      ]
+    ],
+    "n": 14317
+  },
+  "dataset_version": "d845f0ceaf131d4b3a284b85912ff1a148a9c403e3748fef4c4aac934dc2d63f",
+  "train_size": 66813,
+  "training_date": "2026-08-31T18:15:39.903607+00:00",
+  "hyperparameters": {
+    "kind": "hybrid",
+    "algorithm": "svm",
+    "C": 4.0,
+    "balanced": true,
+    "max_features": 60000,
+    "ngram": 2,
+    "min_df": 2
+  },
+  "preprocessing_version": "conservative-v2",
+  "profile": "standard"
+}
