@@ -1,7 +1,7 @@
 import sys
 from pathlib import Path
 
-# Ensure repo root and backend dir are in sys.path for Render/cloud deployments
+# Ensure repo root and backend dir are in sys.path for cloud deployments
 _repo_root = Path(__file__).resolve().parents[2]
 _backend_dir = Path(__file__).resolve().parents[1]
 for _p in [str(_repo_root), str(_backend_dir)]:
@@ -28,8 +28,9 @@ app = FastAPI(title="HIFAZAT AI", version="1.0.0", docs_url="/api/docs", redoc_u
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.cors_origin_list + ["http://localhost:5173", "http://127.0.0.1:5173"],
-    allow_credentials=True,
+    allow_origins=["*"] if settings.public_deployment else (settings.cors_origin_list + ["http://localhost:5173", "http://127.0.0.1:5173"]),
+    allow_origin_regex=r"https://.*" if settings.public_deployment else None,
+    allow_credentials=not settings.public_deployment,
     allow_methods=["*"],
     allow_headers=["*"],
 )

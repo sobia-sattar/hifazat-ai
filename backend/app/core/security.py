@@ -12,20 +12,22 @@ MAX_BODY = 2_100_000
 class LocalBoundaryMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request, call_next):
         public_deployment = get_settings().public_deployment
-        peer = request.client.host if request.client else ''
-        if not public_deployment and peer not in {'127.0.0.1', '::1', 'testclient'}:
-            return JSONResponse({'detail': 'This application is restricted to the local workstation.'}, 403)
-        try:
-            host = urlparse('http://' + request.headers.get('host', '')).hostname
-        except ValueError:
-            host = None
-        if not public_deployment and host not in LOCAL_HOSTS:
-            return JSONResponse({'detail': 'Untrusted Host header.'}, 400)
-        origin = request.headers.get('origin')
-        allowed_origins = set(get_settings().cors_origin_list) | ORIGINS
-        cross_site = request.headers.get('sec-fetch-site') == 'cross-site'
-        if (origin and origin not in allowed_origins) or (not public_deployment and cross_site):
-            return JSONResponse({'detail': 'Cross-site API requests are not allowed.'}, 403)
+        if not public_deployment:
+            peer = request.client.host if request.client else ''
+            if peer not in {'127.0.0.1', '::1', 'testclient'}:
+                return JSONResponse({'detail': 'This application is restricted to the local workstation.'}, 403)
+            try:
+                host = urlparse('http://' + request.headers.get('host', '')).hostname
+            except ValueError:
+                host = None
+            if host not in LOCAL_HOSTS:
+                return JSONResponse({'detail': 'Untrusted Host header.'}, 400)
+            origin = request.headers.get('origin')
+            allowed_origins = set(get_settings().cors_origin_list) | ORIGINS
+            cross_site = request.headers.get('sec-fetch-site') == 'cross-site'
+            if (origin and origin not in allowed_origins) or cross_site:
+                return JSONResponse({'detail': 'Cross-site API requests are not allowed.'}, 403)
+
         if request.method in {'POST', 'PUT', 'PATCH'}:
             try:
                 size = int(request.headers.get('content-length', '0'))

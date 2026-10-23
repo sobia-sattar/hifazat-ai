@@ -18,9 +18,11 @@ data/raw/*
 data/processed/*
 !data/processed/.gitkeep
 models/*.joblib
+!models/best_sklearn.joblib
 models/*.pt
 models/*.bin
 models/*.json
+!models/*.json
 !models/.gitkeep
 frontend/.vite/
 *.log
@@ -31,7 +33,8 @@ tools/
 .hf-cache/
 .tmp/
 .ruff_cache/
-artifacts/models/
+artifacts/models/*
+!artifacts/models/20260831T165315652677Z.joblib
 artifacts/transformers/
 reports/*.npz
 reports/metrics/*/*.npz

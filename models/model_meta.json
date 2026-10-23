@@ -1,0 +1,20 @@
+{
+  "selected_model": "tfidf_linear_svm",
+  "selected_research_name": "tfidf_linear_svm",
+  "selection_criterion": "validation Macro-F1 among sklearn models used for serving",
+  "validation_macro_f1": 0.5987539530284155,
+  "trained_at": "2026-08-23T17:41:15.105576+00:00",
+  "seed": 42,
+  "labels": [
+    "SAFE",
+    "CYBERBULLYING",
+    "HARASSMENT",
+    "HATE_SPEECH",
+    "THREAT",
+    "INSULT",
+    "TOXIC",
+    "SEXUAL_HARASSMENT",
+    "OTHER_HARMFUL"
+  ],
+  "never_claim_100": true
+}
