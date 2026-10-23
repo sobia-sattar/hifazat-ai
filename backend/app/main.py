@@ -1,3 +1,13 @@
+import sys
+from pathlib import Path
+
+# Ensure repo root and backend dir are in sys.path for Render/cloud deployments
+_repo_root = Path(__file__).resolve().parents[2]
+_backend_dir = Path(__file__).resolve().parents[1]
+for _p in [str(_repo_root), str(_backend_dir)]:
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
